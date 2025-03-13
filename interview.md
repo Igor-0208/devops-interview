@@ -1,5 +1,4 @@
-
-
+![memes](https://github.com/Swfuse/devops-interview/blob/main/imgs/memes.jpg)  
 <!-- TOC -->
 
 - [Вопросы админам 2.0](#%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B-%D0%B0%D0%B4%D0%BC%D0%B8%D0%BD%D0%B0%D0%BC-20)
@@ -18,10 +17,22 @@
         - [Расскажи, как происходит процесс загрузки ОС linux с момента нажатия кнопки питания.](#%D1%80%D0%B0%D1%81%D1%81%D0%BA%D0%B0%D0%B6%D0%B8-%D0%BA%D0%B0%D0%BA-%D0%BF%D1%80%D0%BE%D0%B8%D1%81%D1%85%D0%BE%D0%B4%D0%B8%D1%82-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81-%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B8-%D0%BE%D1%81-linux-%D1%81-%D0%BC%D0%BE%D0%BC%D0%B5%D0%BD%D1%82%D0%B0-%D0%BD%D0%B0%D0%B6%D0%B0%D1%82%D0%B8%D1%8F-%D0%BA%D0%BD%D0%BE%D0%BF%D0%BA%D0%B8-%D0%BF%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F)
         - [Что за процессы в Linux c PID 0 и 1](#%D1%87%D1%82%D0%BE-%D0%B7%D0%B0-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D1%8B-%D0%B2-linux-c-pid-0-%D0%B8-1)
         - [Что такое POSIX](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-posix)
-        - [Что такое уровни выполнения](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D0%B8-%D0%B2%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F)
+        - [Интерфейс портативных операционных систем POSIX](#%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81-%D0%BF%D0%BE%D1%80%D1%82%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D1%85-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D1%85-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC-posix)
+        - [Что такое уровни выполнения run levels в Linux](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D0%B8-%D0%B2%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F-run-levels-%D0%B2-linux)
+        - [Описание уровней выполнения](#%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5-%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D0%B5%D0%B9-%D0%B2%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F)
+        - [Примечания к уровням выполнения](#%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%87%D0%B0%D0%BD%D0%B8%D1%8F-%D0%BA-%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D1%8F%D0%BC-%D0%B2%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F)
         - [Какие основные части компоненты включает в себя система на базе дистрибутива linux?](#%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5-%D1%87%D0%B0%D1%81%D1%82%D0%B8-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B-%D0%B2%D0%BA%D0%BB%D1%8E%D1%87%D0%B0%D0%B5%D1%82-%D0%B2-%D1%81%D0%B5%D0%B1%D1%8F-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0-%D0%BD%D0%B0-%D0%B1%D0%B0%D0%B7%D0%B5-%D0%B4%D0%B8%D1%81%D1%82%D1%80%D0%B8%D0%B1%D1%83%D1%82%D0%B8%D0%B2%D0%B0-linux)
-        - [Что такое BIOS, UEFI?](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-bios-uefi)
+        - [Что такое BIOS, UEFI? Основы и различия](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-bios-uefi-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-%D0%B8-%D1%80%D0%B0%D0%B7%D0%BB%D0%B8%D1%87%D0%B8%D1%8F)
+            - [BIOS Basic Input-Output System](#bios-basic-input-output-system)
+            - [Ограничения BIOS:](#%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%B8%D1%8F-bios)
+            - [UEFI Unified Extensible Firmware Interface](#uefi-unified-extensible-firmware-interface)
+            - [Преимущества UEFI по сравнению с BIOS:](#%D0%BF%D1%80%D0%B5%D0%B8%D0%BC%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%B0-uefi-%D0%BF%D0%BE-%D1%81%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D1%8E-%D1%81-bios)
+            - [Заключение](#%D0%B7%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5)
         - [Что такое PXE? Как загрузиться по сети?](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-pxe-%D0%BA%D0%B0%D0%BA-%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%B8%D1%82%D1%8C%D1%81%D1%8F-%D0%BF%D0%BE-%D1%81%D0%B5%D1%82%D0%B8)
+            - [Как работает PXE:](#%D0%BA%D0%B0%D0%BA-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D0%B5%D1%82-pxe)
+            - [Преимущества PXE:](#%D0%BF%D1%80%D0%B5%D0%B8%D0%BC%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%B0-pxe)
+            - [Настройка PXE-загрузки:](#%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-pxe-%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B8)
+            - [Примечание:](#%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%87%D0%B0%D0%BD%D0%B8%D0%B5)
         - [Что такое ядро, initramfs, загрузчик?](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D1%8F%D0%B4%D1%80%D0%BE-initramfs-%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D1%87%D0%B8%D0%BA)
         - [Зачем нужна система инициализации? Какие системы инициализации используются в современных дистрибутивах? 2 - 5 штук init](#%D0%B7%D0%B0%D1%87%D0%B5%D0%BC-%D0%BD%D1%83%D0%B6%D0%BD%D0%B0-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0-%D0%B8%D0%BD%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8-%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-%D0%B8%D0%BD%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D1%8E%D1%82%D1%81%D1%8F-%D0%B2-%D1%81%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D1%85-%D0%B4%D0%B8%D1%81%D1%82%D1%80%D0%B8%D0%B1%D1%83%D1%82%D0%B8%D0%B2%D0%B0%D1%85-2---5-%D1%88%D1%82%D1%83%D0%BA-init)
         - [Что такое systemd и init ? В чем основное преимущество первого над вторым ?](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-systemd-%D0%B8-init--%D0%B2-%D1%87%D0%B5%D0%BC-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B5%D0%B8%D0%BC%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%BE-%D0%BF%D0%B5%D1%80%D0%B2%D0%BE%D0%B3%D0%BE-%D0%BD%D0%B0%D0%B4-%D0%B2%D1%82%D0%BE%D1%80%D1%8B%D0%BC-)
@@ -29,28 +40,38 @@
         - [Опишите, что происходит с точки зрения процессов, при выполнении любой команды в консоли, например:](#%D0%BE%D0%BF%D0%B8%D1%88%D0%B8%D1%82%D0%B5-%D1%87%D1%82%D0%BE-%D0%BF%D1%80%D0%BE%D0%B8%D1%81%D1%85%D0%BE%D0%B4%D0%B8%D1%82-%D1%81-%D1%82%D0%BE%D1%87%D0%BA%D0%B8-%D0%B7%D1%80%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D0%B2-%D0%BF%D1%80%D0%B8-%D0%B2%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D0%B8-%D0%BB%D1%8E%D0%B1%D0%BE%D0%B9-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-%D0%B2-%D0%BA%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D0%B8-%D0%BD%D0%B0%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80)
         - [Как посмотреть нагрузку на диски?](#%D0%BA%D0%B0%D0%BA-%D0%BF%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C-%D0%BD%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D1%83-%D0%BD%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D0%B8)
         - [В чем разница между объявлением переменной export VAR="VALUE" и VAR="VALUE" в bash?](#%D0%B2-%D1%87%D0%B5%D0%BC-%D1%80%D0%B0%D0%B7%D0%BD%D0%B8%D1%86%D0%B0-%D0%BC%D0%B5%D0%B6%D0%B4%D1%83-%D0%BE%D0%B1%D1%8A%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC-%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9-export-varvalue-%D0%B8-varvalue-%D0%B2-bash)
-        - [Что значит $@ в bash?](#%D1%87%D1%82%D0%BE-%D0%B7%D0%BD%D0%B0%D1%87%D0%B8%D1%82--%D0%B2-bash)
+        - [Что значит $@, $!, $?, $$ в bash?](#%D1%87%D1%82%D0%BE-%D0%B7%D0%BD%D0%B0%D1%87%D0%B8%D1%82-----%D0%B2-bash)
         - [Как выполнить фильтрацию вывода команды, чтобы на экран были выведены только ошибки STDERR, игнорируя STDOUT?](#%D0%BA%D0%B0%D0%BA-%D0%B2%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D1%8C-%D1%84%D0%B8%D0%BB%D1%8C%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%8E-%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4%D0%B0-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-%D1%87%D1%82%D0%BE%D0%B1%D1%8B-%D0%BD%D0%B0-%D1%8D%D0%BA%D1%80%D0%B0%D0%BD-%D0%B1%D1%8B%D0%BB%D0%B8-%D0%B2%D1%8B%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D1%8B-%D1%82%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE-%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D0%B8-stderr-%D0%B8%D0%B3%D0%BD%D0%BE%D1%80%D0%B8%D1%80%D1%83%D1%8F-stdout)
+        - [При перенаправлении команд command1 | command2  перенаправляется только stdout. Как сделать так, чтобы stderr тоже перенаправлялся?](#%D0%BF%D1%80%D0%B8-%D0%BF%D0%B5%D1%80%D0%B5%D0%BD%D0%B0%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B8-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4-command1--command2--%D0%BF%D0%B5%D1%80%D0%B5%D0%BD%D0%B0%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%8F%D0%B5%D1%82%D1%81%D1%8F-%D1%82%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE-stdout-%D0%BA%D0%B0%D0%BA-%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C-%D1%82%D0%B0%D0%BA-%D1%87%D1%82%D0%BE%D0%B1%D1%8B-stderr-%D1%82%D0%BE%D0%B6%D0%B5-%D0%BF%D0%B5%D1%80%D0%B5%D0%BD%D0%B0%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%8F%D0%BB%D1%81%D1%8F)
         - [Как посмотреть описание дескриптора? Как посмотреть время последней модификации файла?](#%D0%BA%D0%B0%D0%BA-%D0%BF%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C-%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B4%D0%B5%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%BE%D1%80%D0%B0-%D0%BA%D0%B0%D0%BA-%D0%BF%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C-%D0%B2%D1%80%D0%B5%D0%BC%D1%8F-%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BD%D0%B5%D0%B9-%D0%BC%D0%BE%D0%B4%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D0%B8-%D1%84%D0%B0%D0%B9%D0%BB%D0%B0)
         - [Как работает sudo? Для чего она используется?](#%D0%BA%D0%B0%D0%BA-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D0%B5%D1%82-sudo-%D0%B4%D0%BB%D1%8F-%D1%87%D0%B5%D0%B3%D0%BE-%D0%BE%D0%BD%D0%B0-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D0%B5%D1%82%D1%81%D1%8F)
         - [Что такое userspace, kernelspace? Чем они отличаются?](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-userspace-kernelspace-%D1%87%D0%B5%D0%BC-%D0%BE%D0%BD%D0%B8-%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%B0%D1%8E%D1%82%D1%81%D1%8F)
         - [Что такое системные вызовы? Зачем они нужны и как они работают? Какие системные вызовы знаешь 5-10](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%BD%D1%8B%D0%B5-%D0%B2%D1%8B%D0%B7%D0%BE%D0%B2%D1%8B-%D0%B7%D0%B0%D1%87%D0%B5%D0%BC-%D0%BE%D0%BD%D0%B8-%D0%BD%D1%83%D0%B6%D0%BD%D1%8B-%D0%B8-%D0%BA%D0%B0%D0%BA-%D0%BE%D0%BD%D0%B8-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%8E%D1%82-%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%BD%D1%8B%D0%B5-%D0%B2%D1%8B%D0%B7%D0%BE%D0%B2%D1%8B-%D0%B7%D0%BD%D0%B0%D0%B5%D1%88%D1%8C-5-10)
         - [Где можно найти информацию о конкретном системном вызове?](#%D0%B3%D0%B4%D0%B5-%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE-%D0%BD%D0%B0%D0%B9%D1%82%D0%B8-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8E-%D0%BE-%D0%BA%D0%BE%D0%BD%D0%BA%D1%80%D0%B5%D1%82%D0%BD%D0%BE%D0%BC-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%BD%D0%BE%D0%BC-%D0%B2%D1%8B%D0%B7%D0%BE%D0%B2%D0%B5)
         - [Что делает команда kill?](#%D1%87%D1%82%D0%BE-%D0%B4%D0%B5%D0%BB%D0%B0%D0%B5%D1%82-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B0-kill)
+        - [В чем разница между одинарными кавычками ' и двойными кавычками "?](#%D0%B2-%D1%87%D0%B5%D0%BC-%D1%80%D0%B0%D0%B7%D0%BD%D0%B8%D1%86%D0%B0-%D0%BC%D0%B5%D0%B6%D0%B4%D1%83-%D0%BE%D0%B4%D0%B8%D0%BD%D0%B0%D1%80%D0%BD%D1%8B%D0%BC%D0%B8-%D0%BA%D0%B0%D0%B2%D1%8B%D1%87%D0%BA%D0%B0%D0%BC%D0%B8--%D0%B8-%D0%B4%D0%B2%D0%BE%D0%B9%D0%BD%D1%8B%D0%BC%D0%B8-%D0%BA%D0%B0%D0%B2%D1%8B%D1%87%D0%BA%D0%B0%D0%BC%D0%B8-)
+        - [Приложение запущено как сервис - как посмотреть то, что оно написало в stdout?](#%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B7%D0%B0%D0%BF%D1%83%D1%89%D0%B5%D0%BD%D0%BE-%D0%BA%D0%B0%D0%BA-%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81---%D0%BA%D0%B0%D0%BA-%D0%BF%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C-%D1%82%D0%BE-%D1%87%D1%82%D0%BE-%D0%BE%D0%BD%D0%BE-%D0%BD%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D0%BB%D0%BE-%D0%B2-stdout)
         - [Текущая load average на сервере - 900, 900, 900. Сервер работает с незначительной потерей производительности. Каким образом можно понять, является ли это нормальной ситуацией?](#%D1%82%D0%B5%D0%BA%D1%83%D1%89%D0%B0%D1%8F-load-average-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5---900-900-900-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D0%B5%D1%82-%D1%81-%D0%BD%D0%B5%D0%B7%D0%BD%D0%B0%D1%87%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9-%D0%BF%D0%BE%D1%82%D0%B5%D1%80%D0%B5%D0%B9-%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%BA%D0%B0%D0%BA%D0%B8%D0%BC-%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%BC-%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE-%D0%BF%D0%BE%D0%BD%D1%8F%D1%82%D1%8C-%D1%8F%D0%B2%D0%BB%D1%8F%D0%B5%D1%82%D1%81%D1%8F-%D0%BB%D0%B8-%D1%8D%D1%82%D0%BE-%D0%BD%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9-%D1%81%D0%B8%D1%82%D1%83%D0%B0%D1%86%D0%B8%D0%B5%D0%B9)
         - [Что такое процесс? Что такое тред? В чем заключаются их главные отличия?](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81-%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D1%82%D1%80%D0%B5%D0%B4-%D0%B2-%D1%87%D0%B5%D0%BC-%D0%B7%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B0%D1%8E%D1%82%D1%81%D1%8F-%D0%B8%D1%85-%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%8B%D0%B5-%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%B8%D1%8F)
         - [Где в linux хранится информация о процессах?](#%D0%B3%D0%B4%D0%B5-%D0%B2-linux-%D1%85%D1%80%D0%B0%D0%BD%D0%B8%D1%82%D1%81%D1%8F-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F-%D0%BE-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%B0%D1%85)
+        - [Приложение пишет в логи too many opened files, как это диагностировать?](#%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D0%B8%D1%88%D0%B5%D1%82-%D0%B2-%D0%BB%D0%BE%D0%B3%D0%B8-too-many-opened-files-%D0%BA%D0%B0%D0%BA-%D1%8D%D1%82%D0%BE-%D0%B4%D0%B8%D0%B0%D0%B3%D0%BD%D0%BE%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C)
+        - [Как заставить приложение перестать писать в файл, не завершая процесс?](#%D0%BA%D0%B0%D0%BA-%D0%B7%D0%B0%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D1%82%D1%8C-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D0%B5%D1%80%D0%B5%D1%81%D1%82%D0%B0%D1%82%D1%8C-%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C-%D0%B2-%D1%84%D0%B0%D0%B9%D0%BB-%D0%BD%D0%B5-%D0%B7%D0%B0%D0%B2%D0%B5%D1%80%D1%88%D0%B0%D1%8F-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81)
         - [Что такое CPU pinning](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-cpu-pinning)
         - [Какие алгоритмы планирования ресурсов в linux ты знаешь](#%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%8B-%D0%BF%D0%BB%D0%B0%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-%D1%80%D0%B5%D1%81%D1%83%D1%80%D1%81%D0%BE%D0%B2-%D0%B2-linux-%D1%82%D1%8B-%D0%B7%D0%BD%D0%B0%D0%B5%D1%88%D1%8C)
         - [Представлен вывод команды *top*. Что означает каждая запись в выводе?](#%D0%BF%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD-%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-top-%D1%87%D1%82%D0%BE-%D0%BE%D0%B7%D0%BD%D0%B0%D1%87%D0%B0%D0%B5%D1%82-%D0%BA%D0%B0%D0%B6%D0%B4%D0%B0%D1%8F-%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C-%D0%B2-%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4%D0%B5)
+        - [Что такое swap файл подкачки? Зачем он нужен, и как он работает? Какие данные в него записываются?](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-swap-%D1%84%D0%B0%D0%B9%D0%BB-%D0%BF%D0%BE%D0%B4%D0%BA%D0%B0%D1%87%D0%BA%D0%B8-%D0%B7%D0%B0%D1%87%D0%B5%D0%BC-%D0%BE%D0%BD-%D0%BD%D1%83%D0%B6%D0%B5%D0%BD-%D0%B8-%D0%BA%D0%B0%D0%BA-%D0%BE%D0%BD-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D0%B5%D1%82-%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D0%B2-%D0%BD%D0%B5%D0%B3%D0%BE-%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8B%D0%B2%D0%B0%D1%8E%D1%82%D1%81%D1%8F)
         - [Что показывает статус процессов? Какие статусы используются в linux?](#%D1%87%D1%82%D0%BE-%D0%BF%D0%BE%D0%BA%D0%B0%D0%B7%D1%8B%D0%B2%D0%B0%D0%B5%D1%82-%D1%81%D1%82%D0%B0%D1%82%D1%83%D1%81-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D0%B2-%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D1%81%D1%82%D0%B0%D1%82%D1%83%D1%81%D1%8B-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D1%8E%D1%82%D1%81%D1%8F-%D0%B2-linux)
         - [Что такое зомби-процесс? Как можно создать такой процесс?](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D0%B7%D0%BE%D0%BC%D0%B1%D0%B8-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81-%D0%BA%D0%B0%D0%BA-%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C-%D1%82%D0%B0%D0%BA%D0%BE%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81)
+            - [Процесс создания зомби-процесса](#%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F-%D0%B7%D0%BE%D0%BC%D0%B1%D0%B8-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%B0)
+            - [Интересная тонкость](#%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D0%BD%D0%B0%D1%8F-%D1%82%D0%BE%D0%BD%D0%BA%D0%BE%D1%81%D1%82%D1%8C)
         - [Чем опасны зомби процессы, какие проблемы они могут создать?](#%D1%87%D0%B5%D0%BC-%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D1%8B-%D0%B7%D0%BE%D0%BC%D0%B1%D0%B8-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D1%8B-%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC%D1%8B-%D0%BE%D0%BD%D0%B8-%D0%BC%D0%BE%D0%B3%D1%83%D1%82-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C)
+        - [Можно ли завершить зомби процесс с помощью SIGKILL?](#%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE-%D0%BB%D0%B8-%D0%B7%D0%B0%D0%B2%D0%B5%D1%80%D1%88%D0%B8%D1%82%D1%8C-%D0%B7%D0%BE%D0%BC%D0%B1%D0%B8-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-sigkill)
         - [Что такое SIGCHLD? В какой ситуации процесс может его получить?](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-sigchld-%D0%B2-%D0%BA%D0%B0%D0%BA%D0%BE%D0%B9-%D1%81%D0%B8%D1%82%D1%83%D0%B0%D1%86%D0%B8%D0%B8-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81-%D0%BC%D0%BE%D0%B6%D0%B5%D1%82-%D0%B5%D0%B3%D0%BE-%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C)
         - [Что такое файловый дескриптор, какая информация в нем бывает?](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D1%8B%D0%B9-%D0%B4%D0%B5%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%BE%D1%80-%D0%BA%D0%B0%D0%BA%D0%B0%D1%8F-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F-%D0%B2-%D0%BD%D0%B5%D0%BC-%D0%B1%D1%8B%D0%B2%D0%B0%D0%B5%D1%82)
         - [Для чего нужны сигналы? Какие сигналы используются чаще всего? 5 - 10 штук](#%D0%B4%D0%BB%D1%8F-%D1%87%D0%B5%D0%B3%D0%BE-%D0%BD%D1%83%D0%B6%D0%BD%D1%8B-%D1%81%D0%B8%D0%B3%D0%BD%D0%B0%D0%BB%D1%8B-%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D1%81%D0%B8%D0%B3%D0%BD%D0%B0%D0%BB%D1%8B-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D1%8E%D1%82%D1%81%D1%8F-%D1%87%D0%B0%D1%89%D0%B5-%D0%B2%D1%81%D0%B5%D0%B3%D0%BE-5---10-%D1%88%D1%82%D1%83%D0%BA)
         - [Как осуществляется обработка сигналов? Чем отличается SIGTERM от SIGKILL?](#%D0%BA%D0%B0%D0%BA-%D0%BE%D1%81%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%BB%D1%8F%D0%B5%D1%82%D1%81%D1%8F-%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0-%D1%81%D0%B8%D0%B3%D0%BD%D0%B0%D0%BB%D0%BE%D0%B2-%D1%87%D0%B5%D0%BC-%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%B0%D0%B5%D1%82%D1%81%D1%8F-sigterm-%D0%BE%D1%82-sigkill)
         - [Какой сигнал получит активный процесс при нажатии Ctrl+C в консоли?](#%D0%BA%D0%B0%D0%BA%D0%BE%D0%B9-%D1%81%D0%B8%D0%B3%D0%BD%D0%B0%D0%BB-%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82-%D0%B0%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81-%D0%BF%D1%80%D0%B8-%D0%BD%D0%B0%D0%B6%D0%B0%D1%82%D0%B8%D0%B8-ctrlc-%D0%B2-%D0%BA%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D0%B8)
+        - [Какие сигналы не могут быть проигнорированы?](#%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D1%81%D0%B8%D0%B3%D0%BD%D0%B0%D0%BB%D1%8B-%D0%BD%D0%B5-%D0%BC%D0%BE%D0%B3%D1%83%D1%82-%D0%B1%D1%8B%D1%82%D1%8C-%D0%BF%D1%80%D0%BE%D0%B8%D0%B3%D0%BD%D0%BE%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D1%8B)
         - [Что такое load average? Что показывает эта метрика? Почему load average состоит из трёх значений?](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-load-average-%D1%87%D1%82%D0%BE-%D0%BF%D0%BE%D0%BA%D0%B0%D0%B7%D1%8B%D0%B2%D0%B0%D0%B5%D1%82-%D1%8D%D1%82%D0%B0-%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D0%BA%D0%B0-%D0%BF%D0%BE%D1%87%D0%B5%D0%BC%D1%83-load-average-%D1%81%D0%BE%D1%81%D1%82%D0%BE%D0%B8%D1%82-%D0%B8%D0%B7-%D1%82%D1%80%D1%91%D1%85-%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B9)
         - [Можно ли сделать так, чтобы пользователи могли получать информацию только о своих процессах?](#%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE-%D0%BB%D0%B8-%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C-%D1%82%D0%B0%D0%BA-%D1%87%D1%82%D0%BE%D0%B1%D1%8B-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D0%B8-%D0%BC%D0%BE%D0%B3%D0%BB%D0%B8-%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B0%D1%82%D1%8C-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8E-%D1%82%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE-%D0%BE-%D1%81%D0%B2%D0%BE%D0%B8%D1%85-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%B0%D1%85)
         - [Что такое физическая память?](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D1%84%D0%B8%D0%B7%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D1%8C)
@@ -68,6 +89,7 @@
         - [Что такое символьные устройства? Какие элементарные операции с ними можно производить?](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D1%81%D0%B8%D0%BC%D0%B2%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5-%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B0-%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%80%D0%BD%D1%8B%D0%B5-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8-%D1%81-%D0%BD%D0%B8%D0%BC%D0%B8-%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE-%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D1%8C)
         - [Что такое major and minor numbers блочных устройств, чему они соответствуют?](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-major-and-minor-numbers-%D0%B1%D0%BB%D0%BE%D1%87%D0%BD%D1%8B%D1%85-%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2-%D1%87%D0%B5%D0%BC%D1%83-%D0%BE%D0%BD%D0%B8-%D1%81%D0%BE%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D1%83%D1%8E%D1%82)
         - [Что такое файловая система? Для чего она нужна?](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%B0%D1%8F-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0-%D0%B4%D0%BB%D1%8F-%D1%87%D0%B5%D0%B3%D0%BE-%D0%BE%D0%BD%D0%B0-%D0%BD%D1%83%D0%B6%D0%BD%D0%B0)
+            - [Файловая система как система хранения](#%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%B0%D1%8F-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0-%D0%BA%D0%B0%D0%BA-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0-%D1%85%D1%80%D0%B0%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F)
         - [Как создать файловую систему на блочном устройстве? Какие параметры можно задать при создании?](#%D0%BA%D0%B0%D0%BA-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C-%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D1%83%D1%8E-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%83-%D0%BD%D0%B0-%D0%B1%D0%BB%D0%BE%D1%87%D0%BD%D0%BE%D0%BC-%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B5-%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D1%8B-%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE-%D0%B7%D0%B0%D0%B4%D0%B0%D1%82%D1%8C-%D0%BF%D1%80%D0%B8-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B8)
         - [Что такое **inodes айноды**](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-inodes-%D0%B0%D0%B9%D0%BD%D0%BE%D0%B4%D1%8B)
         - [Где физически находятся inodes айноды](#%D0%B3%D0%B4%D0%B5-%D1%84%D0%B8%D0%B7%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8-%D0%BD%D0%B0%D1%85%D0%BE%D0%B4%D1%8F%D1%82%D1%81%D1%8F-inodes-%D0%B0%D0%B9%D0%BD%D0%BE%D0%B4%D1%8B)
@@ -77,6 +99,12 @@
         - [Каким образом осуществляется монтирование ФС? Как можно посмотреть список примонтированных ФС? 2 - 3 способа](#%D0%BA%D0%B0%D0%BA%D0%B8%D0%BC-%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%BC-%D0%BE%D1%81%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%BB%D1%8F%D0%B5%D1%82%D1%81%D1%8F-%D0%BC%D0%BE%D0%BD%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D1%84%D1%81-%D0%BA%D0%B0%D0%BA-%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE-%D0%BF%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C-%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA-%D0%BF%D1%80%D0%B8%D0%BC%D0%BE%D0%BD%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D1%84%D1%81-2---3-%D1%81%D0%BF%D0%BE%D1%81%D0%BE%D0%B1%D0%B0)
         - [Что такое псевдофайловая система?](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D0%BF%D1%81%D0%B5%D0%B2%D0%B4%D0%BE%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%B0%D1%8F-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0)
         - [Какие проблемы могут возникать с файловой системой и жёстким диском? Можно ли восстановить ФС при незначительном повреждении её структуры? Как это сделать?](#%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC%D1%8B-%D0%BC%D0%BE%D0%B3%D1%83%D1%82-%D0%B2%D0%BE%D0%B7%D0%BD%D0%B8%D0%BA%D0%B0%D1%82%D1%8C-%D1%81-%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%BE%D0%B9-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%BE%D0%B9-%D0%B8-%D0%B6%D1%91%D1%81%D1%82%D0%BA%D0%B8%D0%BC-%D0%B4%D0%B8%D1%81%D0%BA%D0%BE%D0%BC-%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE-%D0%BB%D0%B8-%D0%B2%D0%BE%D1%81%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%82%D1%8C-%D1%84%D1%81-%D0%BF%D1%80%D0%B8-%D0%BD%D0%B5%D0%B7%D0%BD%D0%B0%D1%87%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%BC-%D0%BF%D0%BE%D0%B2%D1%80%D0%B5%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B8-%D0%B5%D1%91-%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D1%8B-%D0%BA%D0%B0%D0%BA-%D1%8D%D1%82%D0%BE-%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C)
+            - [Восстановление файловых систем и инструменты для проверки](#%D0%B2%D0%BE%D1%81%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D1%8B%D1%85-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC-%D0%B8-%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-%D0%B4%D0%BB%D1%8F-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B8)
+            - [Ручная проверка файловой системы](#%D1%80%D1%83%D1%87%D0%BD%D0%B0%D1%8F-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%BE%D0%B9-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B)
+            - [Продвинутые инструменты](#%D0%BF%D1%80%D0%BE%D0%B4%D0%B2%D0%B8%D0%BD%D1%83%D1%82%D1%8B%D0%B5-%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B)
+            - [Инструменты для файловых систем ext2 и ext3](#%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-%D0%B4%D0%BB%D1%8F-%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D1%8B%D1%85-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC-ext2-%D0%B8-ext3)
+            - [Инструменты для файловых систем ReiserFS](#%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-%D0%B4%D0%BB%D1%8F-%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D1%8B%D1%85-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC-reiserfs)
+            - [Инструменты для файловой системы XFS](#%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-%D0%B4%D0%BB%D1%8F-%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%BE%D0%B9-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-xfs)
         - [Какую файловую систему выбрать ext4 или xfs?](#%D0%BA%D0%B0%D0%BA%D1%83%D1%8E-%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D1%83%D1%8E-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%83-%D0%B2%D1%8B%D0%B1%D1%80%D0%B0%D1%82%D1%8C-ext4-%D0%B8%D0%BB%D0%B8-xfs)
         - [Как определить, на каком физическом жёстком диске находится раздел с файловой системой? Как можно идентифицировать этот носитель без выключения сервера?](#%D0%BA%D0%B0%D0%BA-%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B8%D1%82%D1%8C-%D0%BD%D0%B0-%D0%BA%D0%B0%D0%BA%D0%BE%D0%BC-%D1%84%D0%B8%D0%B7%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%BC-%D0%B6%D1%91%D1%81%D1%82%D0%BA%D0%BE%D0%BC-%D0%B4%D0%B8%D1%81%D0%BA%D0%B5-%D0%BD%D0%B0%D1%85%D0%BE%D0%B4%D0%B8%D1%82%D1%81%D1%8F-%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB-%D1%81-%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%BE%D0%B9-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%BE%D0%B9-%D0%BA%D0%B0%D0%BA-%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE-%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D1%86%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-%D1%8D%D1%82%D0%BE%D1%82-%D0%BD%D0%BE%D1%81%D0%B8%D1%82%D0%B5%D0%BB%D1%8C-%D0%B1%D0%B5%D0%B7-%D0%B2%D1%8B%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D1%8F-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B0)
         - [Как узнать, какими процессами используется раздел?](#%D0%BA%D0%B0%D0%BA-%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C-%D0%BA%D0%B0%D0%BA%D0%B8%D0%BC%D0%B8-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%B0%D0%BC%D0%B8-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D0%B5%D1%82%D1%81%D1%8F-%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB)
@@ -132,6 +160,7 @@
         - [Возможен ли самостоятельный перезапуск контейнера?](#%D0%B2%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%B5%D0%BD-%D0%BB%D0%B8-%D1%81%D0%B0%D0%BC%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-%D0%BF%D0%B5%D1%80%D0%B5%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA-%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80%D0%B0)
         - [Какие есть best practices для написания Dockerfile?](#%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D0%B5%D1%81%D1%82%D1%8C-best-practices-%D0%B4%D0%BB%D1%8F-%D0%BD%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D1%8F-dockerfile)
         - [Что такое ката kata контейнер?](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D0%BA%D0%B0%D1%82%D0%B0-kata-%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80)
+        - [CRI, CSI, CNI, что это ?](#cri-csi-cni-%D1%87%D1%82%D0%BE-%D1%8D%D1%82%D0%BE-)
     - [Сети сеть](#%D1%81%D0%B5%D1%82%D0%B8-%D1%81%D0%B5%D1%82%D1%8C)
         - [Почему latency до 8.8.8.8 всегда низкий?](#%D0%BF%D0%BE%D1%87%D0%B5%D0%BC%D1%83-latency-%D0%B4%D0%BE-8888-%D0%B2%D1%81%D0%B5%D0%B3%D0%B4%D0%B0-%D0%BD%D0%B8%D0%B7%D0%BA%D0%B8%D0%B9)
         - [Расскажи мне, как неподготовленному слушателю как устанавливает соединение SSH и происходит авторизация разными методами: по паролю и SSH-ключам.](#%D1%80%D0%B0%D1%81%D1%81%D0%BA%D0%B0%D0%B6%D0%B8-%D0%BC%D0%BD%D0%B5-%D0%BA%D0%B0%D0%BA-%D0%BD%D0%B5%D0%BF%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D0%BE%D0%BC%D1%83-%D1%81%D0%BB%D1%83%D1%88%D0%B0%D1%82%D0%B5%D0%BB%D1%8E-%D0%BA%D0%B0%D0%BA-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%B0%D0%B2%D0%BB%D0%B8%D0%B2%D0%B0%D0%B5%D1%82-%D1%81%D0%BE%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5-ssh-%D0%B8-%D0%BF%D1%80%D0%BE%D0%B8%D1%81%D1%85%D0%BE%D0%B4%D0%B8%D1%82-%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D1%80%D0%B0%D0%B7%D0%BD%D1%8B%D0%BC%D0%B8-%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B0%D0%BC%D0%B8-%D0%BF%D0%BE-%D0%BF%D0%B0%D1%80%D0%BE%D0%BB%D1%8E-%D0%B8-ssh-%D0%BA%D0%BB%D1%8E%D1%87%D0%B0%D0%BC)
@@ -145,25 +174,40 @@
         - [На каком уровне работает протокол TCP?](#%D0%BD%D0%B0-%D0%BA%D0%B0%D0%BA%D0%BE%D0%BC-%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D0%B5-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D0%B5%D1%82-%D0%BF%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB-tcp)
         - [На каком уровне оси работает ssh?](#%D0%BD%D0%B0-%D0%BA%D0%B0%D0%BA%D0%BE%D0%BC-%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D0%B5-%D0%BE%D1%81%D0%B8-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D0%B5%D1%82-ssh)
         - [Как работает DNS, зачем он нужен?](#%D0%BA%D0%B0%D0%BA-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D0%B5%D1%82-dns-%D0%B7%D0%B0%D1%87%D0%B5%D0%BC-%D0%BE%D0%BD-%D0%BD%D1%83%D0%B6%D0%B5%D0%BD)
+        - [типы DNS записей, какие бывают](#%D1%82%D0%B8%D0%BF%D1%8B-dns-%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B5%D0%B9-%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D0%B1%D1%8B%D0%B2%D0%B0%D1%8E%D1%82)
+        - [Что такое адреса 127.0.0.0/8, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12? Зачем они нужны?](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D0%B0%D0%B4%D1%80%D0%B5%D1%81%D0%B0-1270008-1921680016-100008-172160012-%D0%B7%D0%B0%D1%87%D0%B5%D0%BC-%D0%BE%D0%BD%D0%B8-%D0%BD%D1%83%D0%B6%D0%BD%D1%8B)
         - [Как работает NAT, зачем он нужен?](#%D0%BA%D0%B0%D0%BA-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D0%B5%D1%82-nat-%D0%B7%D0%B0%D1%87%D0%B5%D0%BC-%D0%BE%D0%BD-%D0%BD%D1%83%D0%B6%D0%B5%D0%BD)
+            - [Частные и публичные IP-адреса. NAT Network Address Translation](#%D1%87%D0%B0%D1%81%D1%82%D0%BD%D1%8B%D0%B5-%D0%B8-%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D1%87%D0%BD%D1%8B%D0%B5-ip-%D0%B0%D0%B4%D1%80%D0%B5%D1%81%D0%B0-nat-network-address-translation)
+            - [NAT Network Address Translation](#nat-network-address-translation)
+            - [Дополнительное объяснение NAT](#%D0%B4%D0%BE%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5-%D0%BE%D0%B1%D1%8A%D1%8F%D1%81%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5-nat)
         - [Что такое SNI?](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-sni)
         - [Что такое TLS и SSL](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-tls-%D0%B8-ssl)
         - [Чем симметричное шифрование отличается от ассиметричного?](#%D1%87%D0%B5%D0%BC-%D1%81%D0%B8%D0%BC%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%BD%D0%BE%D0%B5-%D1%88%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%B0%D0%B5%D1%82%D1%81%D1%8F-%D0%BE%D1%82-%D0%B0%D1%81%D1%81%D0%B8%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%BD%D0%BE%D0%B3%D0%BE)
         - [Почему DNS использует UDP?](#%D0%BF%D0%BE%D1%87%D0%B5%D0%BC%D1%83-dns-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D0%B5%D1%82-udp)
-        - [днс использует только udp соединение](#%D0%B4%D0%BD%D1%81-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D0%B5%D1%82-%D1%82%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE-udp-%D1%81%D0%BE%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5)
+        - [днс использует только udp соединение?](#%D0%B4%D0%BD%D1%81-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D0%B5%D1%82-%D1%82%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE-udp-%D1%81%D0%BE%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5)
+        - [На каком порту работает ping?](#%D0%BD%D0%B0-%D0%BA%D0%B0%D0%BA%D0%BE%D0%BC-%D0%BF%D0%BE%D1%80%D1%82%D1%83-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D0%B5%D1%82-ping)
         - [Как работает ICMP](#%D0%BA%D0%B0%D0%BA-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D0%B5%D1%82-icmp)
+        - [Что такое TTL?](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-ttl)
+            - [Time To Live TTL](#time-to-live-ttl)
+            - [Почему был введён TTL?](#%D0%BF%D0%BE%D1%87%D0%B5%D0%BC%D1%83-%D0%B1%D1%8B%D0%BB-%D0%B2%D0%B2%D0%B5%D0%B4%D1%91%D0%BD-ttl)
+        - [Как работает traceroute?](#%D0%BA%D0%B0%D0%BA-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D0%B5%D1%82-traceroute)
         - [Что такое authority в DNS?](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-authority-%D0%B2-dns)
+        - [Как узнать мой внешний ip адрес?](#%D0%BA%D0%B0%D0%BA-%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C-%D0%BC%D0%BE%D0%B9-%D0%B2%D0%BD%D0%B5%D1%88%D0%BD%D0%B8%D0%B9-ip-%D0%B0%D0%B4%D1%80%D0%B5%D1%81)
         - [Что такое рекурсивный DNS](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D1%80%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9-dns)
         - [Рекурсивный и нерекурсивный запрос к серверу dns](#%D1%80%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9-%D0%B8-%D0%BD%D0%B5%D1%80%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9-%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81-%D0%BA-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D1%83-dns)
         - [Базовая http аутентификация авторизация, как работает](#%D0%B1%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D1%8F-http-%D0%B0%D1%83%D1%82%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D1%8F-%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%BA%D0%B0%D0%BA-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D0%B5%D1%82)
-        - [Как работают сертификаты? Как подтверждается соединение?](#%D0%BA%D0%B0%D0%BA-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%8E%D1%82-%D1%81%D0%B5%D1%80%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D1%8B-%D0%BA%D0%B0%D0%BA-%D0%BF%D0%BE%D0%B4%D1%82%D0%B2%D0%B5%D1%80%D0%B6%D0%B4%D0%B0%D0%B5%D1%82%D1%81%D1%8F-%D1%81%D0%BE%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5)
+        - [В чём отличие аутентификации от авторизации?](#%D0%B2-%D1%87%D1%91%D0%BC-%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%B8%D0%B5-%D0%B0%D1%83%D1%82%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D0%B8-%D0%BE%D1%82-%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8)
+        - [Как работают сертификаты? Как подтверждается соединение? https соединение](#%D0%BA%D0%B0%D0%BA-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%8E%D1%82-%D1%81%D0%B5%D1%80%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D1%8B-%D0%BA%D0%B0%D0%BA-%D0%BF%D0%BE%D0%B4%D1%82%D0%B2%D0%B5%D1%80%D0%B6%D0%B4%D0%B0%D0%B5%D1%82%D1%81%D1%8F-%D1%81%D0%BE%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5-https-%D1%81%D0%BE%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5)
         - [Опиши принцип работы ssl-шифрования](#%D0%BE%D0%BF%D0%B8%D1%88%D0%B8-%D0%BF%D1%80%D0%B8%D0%BD%D1%86%D0%B8%D0%BF-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B-ssl-%D1%88%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)
         - [Какие стандартные коды ответов есть у веб-серверов?](#%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D1%81%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D0%BD%D1%8B%D0%B5-%D0%BA%D0%BE%D0%B4%D1%8B-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D0%BE%D0%B2-%D0%B5%D1%81%D1%82%D1%8C-%D1%83-%D0%B2%D0%B5%D0%B1-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%BE%D0%B2)
         - [Какие существуют основные типы запросов HTTP?](#%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D1%81%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D1%83%D1%8E%D1%82-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5-%D1%82%D0%B8%D0%BF%D1%8B-%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D0%BE%D0%B2-http)
         - [Что такое маска подсети?](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D0%BC%D0%B0%D1%81%D0%BA%D0%B0-%D0%BF%D0%BE%D0%B4%D1%81%D0%B5%D1%82%D0%B8)
         - [Что такое таблица маршрутизации](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0-%D0%BC%D0%B0%D1%80%D1%88%D1%80%D1%83%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8)
         - [Что такое REST API и API](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-rest-api-%D0%B8-api)
+        - [Динамическая маршрутизация и разные протоколы динамической маршрутизации, ebgp ibgp, константы bgp. На чём сейчас принято строить bgp-пиринги. Что такое blackhole.](#%D0%B4%D0%B8%D0%BD%D0%B0%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D0%BC%D0%B0%D1%80%D1%88%D1%80%D1%83%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%B8-%D1%80%D0%B0%D0%B7%D0%BD%D1%8B%D0%B5-%D0%BF%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB%D1%8B-%D0%B4%D0%B8%D0%BD%D0%B0%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B9-%D0%BC%D0%B0%D1%80%D1%88%D1%80%D1%83%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8-ebgp-ibgp-%D0%BA%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82%D1%8B-bgp-%D0%BD%D0%B0-%D1%87%D1%91%D0%BC-%D1%81%D0%B5%D0%B9%D1%87%D0%B0%D1%81-%D0%BF%D1%80%D0%B8%D0%BD%D1%8F%D1%82%D0%BE-%D1%81%D1%82%D1%80%D0%BE%D0%B8%D1%82%D1%8C-bgp-%D0%BF%D0%B8%D1%80%D0%B8%D0%BD%D0%B3%D0%B8-%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-blackhole)
+            - [eBGP и iBGP](#ebgp-%D0%B8-ibgp)
         - [Расскажи про модель TCP IP](#%D1%80%D0%B0%D1%81%D1%81%D0%BA%D0%B0%D0%B6%D0%B8-%D0%BF%D1%80%D0%BE-%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C-tcp-ip)
+        - [Чем отличаются балансировщики L4 и L7? Что умеет балансировщик L7, чего не умеет L4?](#%D1%87%D0%B5%D0%BC-%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%B0%D1%8E%D1%82%D1%81%D1%8F-%D0%B1%D0%B0%D0%BB%D0%B0%D0%BD%D1%81%D0%B8%D1%80%D0%BE%D0%B2%D1%89%D0%B8%D0%BA%D0%B8-l4-%D0%B8-l7-%D1%87%D1%82%D0%BE-%D1%83%D0%BC%D0%B5%D0%B5%D1%82-%D0%B1%D0%B0%D0%BB%D0%B0%D0%BD%D1%81%D0%B8%D1%80%D0%BE%D0%B2%D1%89%D0%B8%D0%BA-l7-%D1%87%D0%B5%D0%B3%D0%BE-%D0%BD%D0%B5-%D1%83%D0%BC%D0%B5%D0%B5%D1%82-l4)
     - [Ansible](#ansible)
         - [Для чего нужен ad hoc в ansible?](#%D0%B4%D0%BB%D1%8F-%D1%87%D0%B5%D0%B3%D0%BE-%D0%BD%D1%83%D0%B6%D0%B5%D0%BD-ad-hoc-%D0%B2-ansible)
         - [Что такое роли в ansible, пример](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D1%80%D0%BE%D0%BB%D0%B8-%D0%B2-ansible-%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80)
@@ -177,12 +221,19 @@
         - [Что такое индексы, зачем они нужны?](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D0%B8%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%D1%8B-%D0%B7%D0%B0%D1%87%D0%B5%D0%BC-%D0%BE%D0%BD%D0%B8-%D0%BD%D1%83%D0%B6%D0%BD%D1%8B)
         - [Какая будет проблема если проставить много индексов?](#%D0%BA%D0%B0%D0%BA%D0%B0%D1%8F-%D0%B1%D1%83%D0%B4%D0%B5%D1%82-%D0%BF%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC%D0%B0-%D0%B5%D1%81%D0%BB%D0%B8-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D1%82%D1%8C-%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B8%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%D0%BE%D0%B2)
         - [Как настроить мастер слейв репликацию в мускуле?](#%D0%BA%D0%B0%D0%BA-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B8%D1%82%D1%8C-%D0%BC%D0%B0%D1%81%D1%82%D0%B5%D1%80-%D1%81%D0%BB%D0%B5%D0%B9%D0%B2-%D1%80%D0%B5%D0%BF%D0%BB%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D1%8E-%D0%B2-%D0%BC%D1%83%D1%81%D0%BA%D1%83%D0%BB%D0%B5)
-        - [В чем разница между truncate delete  и drop?](#%D0%B2-%D1%87%D0%B5%D0%BC-%D1%80%D0%B0%D0%B7%D0%BD%D0%B8%D1%86%D0%B0-%D0%BC%D0%B5%D0%B6%D0%B4%D1%83-truncate-delete--%D0%B8-drop)
+        - [В чем разница между TRUNCATE DELETE и DROP?](#%D0%B2-%D1%87%D0%B5%D0%BC-%D1%80%D0%B0%D0%B7%D0%BD%D0%B8%D1%86%D0%B0-%D0%BC%D0%B5%D0%B6%D0%B4%D1%83-truncate-delete-%D0%B8-drop)
     - [Что такое роли в pgsql](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D1%80%D0%BE%D0%BB%D0%B8-%D0%B2-pgsql)
         - [Почему не следует использовать утилиту mysqldump на большой активной базе данных? Какие Вы знаете альтернативы?](#%D0%BF%D0%BE%D1%87%D0%B5%D0%BC%D1%83-%D0%BD%D0%B5-%D1%81%D0%BB%D0%B5%D0%B4%D1%83%D0%B5%D1%82-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-%D1%83%D1%82%D0%B8%D0%BB%D0%B8%D1%82%D1%83-mysqldump-%D0%BD%D0%B0-%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%BE%D0%B9-%D0%B0%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D0%B9-%D0%B1%D0%B0%D0%B7%D0%B5-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D0%B2%D1%8B-%D0%B7%D0%BD%D0%B0%D0%B5%D1%82%D0%B5-%D0%B0%D0%BB%D1%8C%D1%82%D0%B5%D1%80%D0%BD%D0%B0%D1%82%D0%B8%D0%B2%D1%8B)
+        - [Аббревиатура ACID, как расшифровывается?](#%D0%B0%D0%B1%D0%B1%D1%80%D0%B5%D0%B2%D0%B8%D0%B0%D1%82%D1%83%D1%80%D0%B0-acid-%D0%BA%D0%B0%D0%BA-%D1%80%D0%B0%D1%81%D1%88%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D1%8B%D0%B2%D0%B0%D0%B5%D1%82%D1%81%D1%8F)
+        - [Как безопасно удалить или изменить миллион строк в базе данных?](#%D0%BA%D0%B0%D0%BA-%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE-%D1%83%D0%B4%D0%B0%D0%BB%D0%B8%D1%82%D1%8C-%D0%B8%D0%BB%D0%B8-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B8%D1%82%D1%8C-%D0%BC%D0%B8%D0%BB%D0%BB%D0%B8%D0%BE%D0%BD-%D1%81%D1%82%D1%80%D0%BE%D0%BA-%D0%B2-%D0%B1%D0%B0%D0%B7%D0%B5-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85)
+        - [Что такое wal-файл и зачем он нужен?](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-wal-%D1%84%D0%B0%D0%B9%D0%BB-%D0%B8-%D0%B7%D0%B0%D1%87%D0%B5%D0%BC-%D0%BE%D0%BD-%D0%BD%D1%83%D0%B6%D0%B5%D0%BD)
     - [Python](#python)
-        - [Что такое хеш таблица?](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D1%85%D0%B5%D1%88-%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0)
+        - [Хеш-таблица](#%D1%85%D0%B5%D1%88-%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0)
+            - [Что такое хеш-таблица?](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D1%85%D0%B5%D1%88-%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0)
+            - [Пример использования хеш-таблиц](#%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-%D1%85%D0%B5%D1%88-%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86)
         - [Что такое генератор, что такое итератор?](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D0%B3%D0%B5%D0%BD%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80-%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80)
+            - [Итератор](#%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80)
+            - [Генератор](#%D0%B3%D0%B5%D0%BD%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80)
         - [В чем разница между кортежем и списком?](#%D0%B2-%D1%87%D0%B5%D0%BC-%D1%80%D0%B0%D0%B7%D0%BD%D0%B8%D1%86%D0%B0-%D0%BC%D0%B5%D0%B6%D0%B4%D1%83-%D0%BA%D0%BE%D1%80%D1%82%D0%B5%D0%B6%D0%B5%D0%BC-%D0%B8-%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%BE%D0%BC)
         - [Что такое декоратор?](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D0%B4%D0%B5%D0%BA%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80)
     - [Какое значение принимает переменная в Python, которая не имеет значения?](#%D0%BA%D0%B0%D0%BA%D0%BE%D0%B5-%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%B8%D0%BD%D0%B8%D0%BC%D0%B0%D0%B5%D1%82-%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F-%D0%B2-python-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D0%B0%D1%8F-%D0%BD%D0%B5-%D0%B8%D0%BC%D0%B5%D0%B5%D1%82-%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D1%8F)
@@ -192,6 +243,7 @@
         - [Что такое minikube?](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-minikube)
         - [Приведи пример проблемы, которая упрощает работу именно с использованием кубернетеса?](#%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B8-%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80-%D0%BF%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC%D1%8B-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D0%B0%D1%8F-%D1%83%D0%BF%D1%80%D0%BE%D1%89%D0%B0%D0%B5%D1%82-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%83-%D0%B8%D0%BC%D0%B5%D0%BD%D0%BD%D0%BE-%D1%81-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%D0%BC-%D0%BA%D1%83%D0%B1%D0%B5%D1%80%D0%BD%D0%B5%D1%82%D0%B5%D1%81%D0%B0)
         - [В чем отличие statefulset от Deployment?**](#%D0%B2-%D1%87%D0%B5%D0%BC-%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%B8%D0%B5-statefulset-%D0%BE%D1%82-deployment)
+        - [statefulset что такое ?](#statefulset-%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-)
         - [В чем отличие Deployment от Replicaset?](#%D0%B2-%D1%87%D0%B5%D0%BC-%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%B8%D0%B5-deployment-%D0%BE%D1%82-replicaset)
         - [Что такое Readiness, Liveness, Startup пробы, какое отличие?](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-readiness-liveness-startup-%D0%BF%D1%80%D0%BE%D0%B1%D1%8B-%D0%BA%D0%B0%D0%BA%D0%BE%D0%B5-%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%B8%D0%B5)
         - [Что такое оператор в kubernetes?](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80-%D0%B2-kubernetes)
@@ -205,7 +257,7 @@
         - [Что такое Deployment?](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-deployment)
         - [Что такое Service](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-service)
         - [Какие типы service бывают?](#%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D1%82%D0%B8%D0%BF%D1%8B-service-%D0%B1%D1%8B%D0%B2%D0%B0%D1%8E%D1%82)
-        - [Что такое Ingress](#%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-ingress)
+        - [Что такое Ingress](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-ingress)
         - [Что такое Job](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-job)
         - [Что такое CronJob](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-cronjob)
         - [Что означает версия api apiVersion](#%D1%87%D1%82%D0%BE-%D0%BE%D0%B7%D0%BD%D0%B0%D1%87%D0%B0%D0%B5%D1%82-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F-api-apiversion)
@@ -221,9 +273,11 @@
         - [Что такое Requests, Limits?](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-requests-limits)
         - [Affinity, anti-affinity**](#affinity-anti-affinity)
         - [Что такое Helm](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-helm)
+        - [Что дает helm в кубе ?](#%D1%87%D1%82%D0%BE-%D0%B4%D0%B0%D0%B5%D1%82-helm-%D0%B2-%D0%BA%D1%83%D0%B1%D0%B5-)
         - [если лимит больше чем реквест и нету ресурсов на ноде и выложиться ли такой под](#%D0%B5%D1%81%D0%BB%D0%B8-%D0%BB%D0%B8%D0%BC%D0%B8%D1%82-%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B5-%D1%87%D0%B5%D0%BC-%D1%80%D0%B5%D0%BA%D0%B2%D0%B5%D1%81%D1%82-%D0%B8-%D0%BD%D0%B5%D1%82%D1%83-%D1%80%D0%B5%D1%81%D1%83%D1%80%D1%81%D0%BE%D0%B2-%D0%BD%D0%B0-%D0%BD%D0%BE%D0%B4%D0%B5-%D0%B8-%D0%B2%D1%8B%D0%BB%D0%BE%D0%B6%D0%B8%D1%82%D1%8C%D1%81%D1%8F-%D0%BB%D0%B8-%D1%82%D0%B0%D0%BA%D0%BE%D0%B9-%D0%BF%D0%BE%D0%B4)
         - [Через что реализованы сети в kubernetes?](#%D1%87%D0%B5%D1%80%D0%B5%D0%B7-%D1%87%D1%82%D0%BE-%D1%80%D0%B5%D0%B0%D0%BB%D0%B8%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D1%8B-%D1%81%D0%B5%D1%82%D0%B8-%D0%B2-kubernetes)
         - [Что произойдет при изменении имейджа? Как будут докатываться изменения?](#%D1%87%D1%82%D0%BE-%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%BE%D0%B9%D0%B4%D0%B5%D1%82-%D0%BF%D1%80%D0%B8-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B8-%D0%B8%D0%BC%D0%B5%D0%B9%D0%B4%D0%B6%D0%B0-%D0%BA%D0%B0%D0%BA-%D0%B1%D1%83%D0%B4%D1%83%D1%82-%D0%B4%D0%BE%D0%BA%D0%B0%D1%82%D1%8B%D0%B2%D0%B0%D1%82%D1%8C%D1%81%D1%8F-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F)
+        - [Что такое headless service ?](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-headless-service-)
     - [GIT](#git)
         - [Чем merge отличается от rebase?](#%D1%87%D0%B5%D0%BC-merge-%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%B0%D0%B5%D1%82%D1%81%D1%8F-%D0%BE%D1%82-rebase)
         - [Когда нужно использовать merge, когда rebase?](#%D0%BA%D0%BE%D0%B3%D0%B4%D0%B0-%D0%BD%D1%83%D0%B6%D0%BD%D0%BE-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-merge-%D0%BA%D0%BE%D0%B3%D0%B4%D0%B0-rebase)
@@ -248,7 +302,6 @@
         - [Что такое SLO, SLA, SLI?](#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-slo-sla-sli)
 
 <!-- /TOC -->
-
 
 # Вопросы админам 2.0
 
@@ -689,7 +742,7 @@
     
     1. При включении компьютера цп переходит на адрес биоса и загружает биос.  
     2. Биос, или uefi проходит кучу проверок и согласно своим проверкам носитель информации.  
-    3. На носителе находится MBR или GPT где находится загрузчик. Дальше по обстоятельствам. Загрузчик может загружать ось, а может передать управление дальше дальше. 
+    3. На носителе находится MBR или GPT где находится загрузчик. Дальше по обстоятельствам. Загрузчик может загружать ось, а может передать управление дальше. 
        Например, если у нас есть несколько систем на нескольких разделах.  
        Под первой частью загрузки подразумевается небольшая часть машинного кода, которая запускает второй загрузчик. Потому что выделяется 446 байт. Там ничего не поместится.   
     4. Итого загрузчик первого этапа загружает загрузчик второго и кладет данные в оперативку. 
@@ -702,12 +755,16 @@
     
 
     **супер коротко**
-    1. загрузка биоса либо UEFI
-    2. биос либо UEFI проверяет работоспособность всех компонентов
-    3. бутлоадер грузит OS 
-    4. она уже грузит ядро
-    5. ядро конфигурирует уже всю память, процессор и тд
-    6. затем запускается инит процесс
+    1. загрузка биоса либо UEFI.
+    2. биос либо UEFI проверяет работоспособность всех компонентов и запускает бутлоадер, 
+       ищет его в  MBR или GPT разделе на диске.
+    3. бутлоадер грузит OS.
+    4. она уже грузит ядро.
+    5. ядро конфигурирует уже всю память, процессор и тд.
+    6. ядро запускает init процесс.
+    8. запускаются все сервисы.
+    9. логин в систему.
+    7. запускаются скрипты оболочки юзера аля .bashrc, .zshrc, zprofile и тд.
     
 
     Полная подробная по загрузке пк вы можете увидеть по ссылке:
@@ -739,106 +796,138 @@
 
 - Ответ
     
-    Это интерфейс портативных операционных систем.
-    
-    «Портативность», в контексте стандарта POSIX, относится к исходному коду (не к бинарникам, которые из этих самых исходников собираются).
-    
-    «Интерфейс» — это взаимодействие вашего кода с остальным кодом.
-    
-    Это такое описание общее как с нами будут работать программы. Можно взять программу из одной ос и без проблем запустить на другой.
-    Семафоры. Разделение одного и того же ресурса.
-    
-    Как управлять потоками, как держаться, и все такое. 
+    ### Интерфейс портативных операционных систем (POSIX)
+
+    **Портативность** в контексте стандарта POSIX относится к исходному коду, а не к бинарным файлам, которые собираются из этого исходного кода. Это означает, что программы, написанные с соблюдением стандартов POSIX, могут быть скомпилированы и запущены на различных операционных системах без значительных изменений в исходном коде.
+
+    **Интерфейс** — это способ взаимодействия вашего кода с остальной системой. POSIX определяет общий интерфейс, который описывает, как программы должны взаимодействовать с операционной системой.
+
+    Таким образом, программы, разработанные для одной операционной системы, могут быть легко перенесены на другую, если обе системы поддерживают стандарт POSIX.
+
+    Некоторые из ключевых аспектов POSIX включают:
+    - **Семафоры** — механизм для синхронизации процессов и разделения ресурсов.
+    - **Управление потоками** — стандарты для работы с потоками, синхронизации и управления ими.
+
+    POSIX предоставляет основу для того, чтобы разработчики могли писать программы, которые будут совместимы с различными операционными системами, обеспечивая высокую степень переносимости кода.
+
     
 ---
 
-### Что такое уровни выполнения
+### Что такое уровни выполнения (run levels) в Linux
 
 - Ответ
+
+    В Linux существует понятие **уровень выполнения** (*run level*), который обозначается числами от 0 до 6. Каждый уровень выполнения соответствует определённому состоянию системы.
     
-    В Linux существует такое понятие как уровень выполнения (run level). Уровень выполнения обозначается числами от 0 до 6.
+    Система в любой момент времени находится на определённом уровне выполнения. Как системный администратор, вы можете переводить её с одного уровня выполнения на другой с помощью программы `init` (или `telinit`), передавая в качестве аргумента число, соответствующее нужному уровню выполнения.
     
-    Система в определенный момент времени находится на соответствующем уровне выполнения. 
-    Вы, как администратор системы, можете переводить её с одного уровня выполнения на другой. Это делается при помощи программы init (или telinit). 
-    Для этого программе в качестве аргумента передается число, соответствующее уровню выполнения.
+    ### Описание уровней выполнения
     
-    - **0** — выполняются действия по выключению системы.
-    - **1** — однопользовательский режим (single user mode).
-    Предназначен для различных административных действий по восстановлению
-    системы. По своему смыслу аналогичен Safe Mode Windows, но полностью его не повторяет. На этом уровне выполнения система полностью
-    сконфигурирована, но не запущен ни один сервис, а из пользователей может работать только один root.
-    - **2** — не используется, но сконфигурирован как уровень выполнения 3. В RedHat и SuSE Linux сконфигурирован как уровень
-    выполнения 3, но без поддержки сетевых файловых систем. В Debian
-    используется как многопользовательский режим.
-    - **3** — многопользовательский режим (multiuser mode). Нормальный режим работы сервера.
-    - **4** — В Slackware Linux используется для графического входа в систему. В RedHat и SuSE Linux не сконфигурирован.
-    - **5** — В RedHat и SuSE Linux используется для графического входа в систему. В Slackware Linux не сконфигурирован.
-    - **6** — выполняются действия по перезагрузке системы.
+  - **0** — система выполняет действия по выключению.
+  - **1** — **однопользовательский режим** (*single user mode*). Предназначен для административных задач, например, восстановления системы. По функциональности напоминает безопасный режим (*Safe Mode*) в Windows, однако не является его полной аналогией. В этом режиме система сконфигурирована, но не запущен ни один сервис, и может работать только один пользователь — `root`.
+  - **2** — **многопользовательский режим без сетевых файловых систем**. Не используется во многих дистрибутивах, но в Debian используется как стандартный многопользовательский режим.
+  - **3** — **многопользовательский режим с сетевыми возможностями**. Это нормальный режим работы сервера без графического интерфейса.
+  - **4** — **не используется** в большинстве систем. В Slackware Linux используется для графического входа в систему.
+  - **5** — **графический режим**. В RedHat и SuSE Linux этот уровень используется для графического входа в систему. В Slackware не сконфигурирован.
+  - **6** — выполняются действия по перезагрузке системы.
+
+   ### Примечания к уровням выполнения
+  - В большинстве современных систем уровни выполнения заменены на **systemd targets**, но принцип остаётся аналогичным.
+
 
 ---
 
 ### Какие основные части компоненты включает в себя система на базе дистрибутива linux? 
 
 - Написать ответ
-    1. Начальный загрузчик. GRUB
-    2. Ядро Linux. Ядро это центральная часть системы, которая управляет процессором, памятью, устройствами ввода вывода
-    3. Демоны. Фоновые процессы
-    4. Командная оболочка
-    5. Утилиты командной оболочки
-    6. Графический сервер. [x.org](http://x.org), он управляет вдиокартой, монитором, мышью. и другими устройствами
-    7. Среда рабочего стола. KDE, Chiamon, и тд. Они также включают в себя утилиты, например, файловый менеджер
-    8. Программы рабочего стола. Например, определенные файловые менеджеры в определенной среде
+  1. **Начальный загрузчик (GRUB)**  
+     GRUB (Grand Unified Bootloader) — это программа, которая отвечает за загрузку операционной системы. Она выполняется на этапе начальной загрузки и предоставляет выбор операционных систем или конфигураций для загрузки ядра.
 
+  2. **Ядро Linux**  
+    Ядро — это центральная часть операционной системы. Оно управляет ресурсами компьютера, такими как процессор, память и устройства ввода-вывода. Ядро выполняет важнейшие функции, включая управление процессами, памятью и взаимодействие с аппаратным обеспечением.
+
+  3. **Демоны**  
+   Демоны — это фоновые процессы, которые работают в системе и выполняют различные задачи без вмешательства пользователя. Примеры: `cron` (планировщик задач), `sshd` (управление удалёнными соединениями).
+
+  4. **Командная оболочка (Shell)**  
+   Оболочка — это интерфейс между пользователем и операционной системой. Она позволяет вводить команды и запускать программы. Примеры командных оболочек: `bash`, `zsh`, `fish`.
+
+  5. **Утилиты командной оболочки**  
+   Это набор команд и программ, которые выполняются из командной строки. Примеры таких утилит: `ls` (список файлов), `cp` (копирование файлов), `grep` (поиск текста).
+
+  6. **Графический сервер**  
+   Графический сервер, такой как [X.org](http://x.org), управляет графическим интерфейсом, видеокартой, монитором, мышью и другими устройствами ввода-вывода, необходимыми для отображения и взаимодействия с пользователем.
+
+  7. **Среда рабочего стола**  
+   Среда рабочего стола — это графический интерфейс, предоставляющий пользователю доступ к утилитам и инструментам операционной системы. Примеры: KDE, GNOME, Xfce, Cinnamon. Они включают в себя различные программы, такие как файловые менеджеры, панель задач и другие утилиты.
+
+  8. **Программы рабочего стола**  
+   Программы рабочего стола — это приложения, которые запускаются в рамках среды рабочего стола, такие как текстовые редакторы, браузеры, почтовые клиенты и файловые менеджеры, специфичные для каждой среды.
 ---
 
-### Что такое BIOS, UEFI? 
+### Что такое BIOS, UEFI? Основы и различия
 
-- Написать ответ
+-  Ответ
+
+    #### BIOS (Basic Input-Output System)
+    **BIOS** — это низкоуровневое программное обеспечение, которое хранится на микросхеме, расположенной на материнской плате компьютера. Оно загружается при включении ПК и отвечает за инициализацию аппаратных компонентов, обеспечивая их правильную работу, а затем запускает загрузчик операционной системы.
     
-    **BIOS** - Basic Input-Output System. Это низкоуровневое по.
-    Располагается на чипе пк на материнке. Он загружается при запуске пк, и отвечает за пробуждение аппаратных компонентов пк, обеспечивает правильную их работу. И запускает загрузчик.
+    Когда компьютер включается, **BIOS** выполняет самотестирование — **POST (Power-On Self Test)**. В процессе тестирования проверяется конфигурация и работоспособность оборудования. Если обнаружены ошибки, BIOS может издавать звуковые сигналы (пищать) или выводить коды ошибок. После этого BIOS ищет загрузочную запись или MBR (Master Boot Record) и запускает загрузчик системы.
     
-    При включении биос проходит самотестирование POST(Power-On Self Test) при включении питания перед загрузкой ОС. Он проверяет правильность конфигурации оборудования и его правильную работу. 
-    Если что-то пойдет не так, он будет пищать или покажет код проваленного теста. 
-    Затем биос ищет загрузочную запись или MBR, и запускает загрузчик  
+    BIOS также взаимодействует с **CMOS** (Дополнительный металл-оксид-полупроводник), небольшой памятью с батарейным питанием, где хранятся настройки BIOS, такие как конфигурация оборудования, системное время и параметры загрузки.
     
-    Есть еще CMOS. Это дополнительный металл оксид-полупроводник. Это память с батарейкой, где биос хранит настройки на плате. 
+    #### Ограничения BIOS:
+    - BIOS поддерживает загрузку только с дисков объемом до **2.1 ТБ**, так как использует **MBR** для разметки дисков.
+    - BIOS работает в режиме **16-разрядного процессора** и имеет всего **1 МБ свободной памяти**.
+    - У BIOS есть проблемы с одновременной инициализацией нескольких аппаратных устройств.
+  
+    Из-за этих ограничений BIOS считается устаревшей технологией.
     
-    БИОС устарел, и имеет ограничения. 
+    #### UEFI (Unified Extensible Firmware Interface)
+    В 2007 году был разработан новый стандарт — **UEFI**, который заменяет BIOS и устраняет его ограничения. UEFI — это современная прошивка, которая предоставляет более гибкие возможности для взаимодействия с аппаратным обеспечением и операционной системой.
     
-    - Может загружаться с дисков с объемом 2.1ТБ и меньше. Так работает MBR в биос
-    - Биос должен работать в режиме 16-разрядного процессора и имеет 1мб свободного места.
-    - Имеет  проблемы с инициализацией нескольких аппаратных устройств одновременно.
+    #### Преимущества UEFI по сравнению с BIOS:
+    - Поддержка загрузки с дисков объемом до **2.2 ТБ** и выше (до **9.4 зетабайт**) с использованием **GPT** (GUID Partition Table).
+    - Работает в **32-битном** или **64-битном** режиме, что позволяет иметь большее адресное пространство и более быстрый запуск системы.
+    - В UEFI есть поддержка графики и мыши, что делает интерфейс более удобным, хотя это не обязательно.
+    - **Безопасная загрузка (Secure Boot)** — UEFI проверяет целостность загружаемых компонентов, что защищает от загрузки неподписанного или изменённого программного обеспечения.
+    - Поддержка сетевых функций в прошивке, что позволяет загружаться через сеть (PXE).
+      
+    UEFI можно рассматривать как маленькую операционную систему, которая работает поверх прошивки ПК. Она может храниться на флеш-памяти и обладает значительно большими возможностями по сравнению с BIOS.
     
-    В 2007 согласовали новый стандарт. UEFI. И он интелом не управляется
-    
-    UEFI замена биосу.
-    
-    По факту это новый стандарт, который решает следующие ограничения биоса:
-    
-    - Может грузиться с дсисков емкостью 2.2 ТБ. Предел 9.4 зетабайта. Это больше чем все данные в интернете. Использует GPT.
-    - UEFI работает в 32 битном или 64 битном режиме. Имеет более адресумое адресное пространство. Загружается быстрее. Поэтому в uefi есть поддержка мыши, графика. Хоть и необязательно.
-    - В uefi появилась безопасная загрузка чтобы проверить по на достоверность.
-    - Поддержка сетевых функций в прошивке.
-    - По факту это крошечная ось, которая работает поверх прошивки пк, и делает больше чем биос. Она может храниться на флеш памяти.
+    #### Заключение
+    BIOS был основным методом управления запуском системы на протяжении десятилетий, но его ограничения привели к созданию UEFI, более мощного и гибкого стандарта, который поддерживает современные технологии и устраняет недостатки BIOS.
 
 ---
 
 ### Что такое PXE? Как загрузиться по сети?
 
 - Ответ
-    PXE - (Preboot eXecution Environment читается как пикси) - среда загрузки компа с помощью сетевой карты.
+
+    **PXE** (читается как "пикси") — это среда, которая позволяет компьютеру загружаться по сети с помощью сетевой карты. Это особенно удобно для установки операционных систем без необходимости постоянно использовать физические носители, такие как флешки или диски.
     
-    Сервер, предоставляющий загрузку по сети PXE. Фишка в том, что это позволяет устанавливать ось не ходя всё время со флешкой с системой.
+    #### Как работает PXE:
     
-    Выглядит так - питание → BIOS → стек сетевой платы ЗЧУ → программа сетевой загрузки NBP, которая загружается с TFTP сервера в память машины, и дальше грузится образ.
-    А PXE-код находится в ПЗУ сетевой карты, и получает по сети по протоколу TTFTP исполняемый файл.
+    1. При включении компьютера, последовательность запуска выглядит так:
+       - Подача питания → **BIOS** → инициализация сетевой карты через её собственный стек (ЗЧУ).
+       - После этого запускается программа сетевой загрузки **NBP** (Network Boot Program), которая загружается с **TFTP-сервера** (Trivial File Transfer Protocol) в оперативную память компьютера.
+       - Далее загружается образ операционной системы или установочный образ.
+
+    2. **PXE-код** встроен в ПЗУ сетевой карты. Он отвечает за получение исполняемого файла по сети, используя протокол **TFTP**.
+
+    #### Преимущества PXE:
+    PXE позволяет системным администраторам устанавливать операционные системы на компьютеры удалённо, без необходимости использовать физические носители. Это особенно полезно для массовой установки систем в корпоративных сетях.
+
+    #### Настройка PXE-загрузки:
+
+    1. Зайдите в **BIOS** или **UEFI**.
+    2. Найдите раздел **Advanced** или похожий, в зависимости от версии BIOS.
+    3. Найдите опцию, связанную с загрузкой по сети, такую как **LAN Boot** или **Network Boot**, и включите её.
+
+    #### Примечание:
+    - При включённой функции **Fast Boot** сетевые карты могут загружаться через агент сетевой загрузки, например, **Network Atheros Boot Agent**.
     
-    Как замутить загрузку такую?
-    Заходим в биос, адванс. Будет что-то типа LAN boot
-    
-    При фаст буте будет что-то типа Network Atheros Boot Agent
-    
+    Таким образом, PXE позволяет загружать операционные системы напрямую по сети, что упрощает массовую установку и обслуживание системы.
 
 ---
 
@@ -972,8 +1061,9 @@
 
 - Ответ
     
-    Установить утилиту `sysstat`, проверить нагрузку на диски `iostat -xtc`.
-    1.
+    Установить утилиту `sysstat`, проверить нагрузку на диски `iostat -xtc`.  
+    Использовать утилиту `iotop`, которая показывает процессы, которые активно используют диск.  
+    Использовать `dstat` - утилита, которая выводит раз в какое-то время статистику по системным ресурсам. В целом более удобная замена таких утилит как vmstat, iostat, ifstat
     
 
 ---
@@ -989,11 +1079,15 @@
 
 ---
 
-### Что значит `$@` в bash?
+### Что значит `$@`, `$!`, `$?`, `$$` в bash?
 
 - Ответ
     
-    `$@` - все параметры переданные скрипту.
+    `$@` - показывает все параметры переданные скрипту.  
+    `$!` - показывает pid последнего процесса, которая оболочка запустила в фоновом режиме.  
+    `$$` - показывает текущий pid процесса.  
+    `$?` - показывает с каким кодом завершилась последняя выполненная функция. 0 - успешное выполнение.
+
     
 
 ---
@@ -1006,6 +1100,18 @@
     cmd 2>&1 >/dev/null | grep pattern
     ```
     
+
+---
+
+### При перенаправлении команд (command1 | command2 ) перенаправляется только stdout. Как сделать так, чтобы stderr тоже перенаправлялся?  
+
+- Ответ
+    Либо использовать перенаправление. То есть перенаправляется второй файловый дескриптор туда, куда направлен stdout:  
+    `command1 2>&1 | command2`  
+
+    Либо использовать более укороченную версию:    
+    `command1 |& command2`  
+
 
 ---
 
@@ -1173,6 +1279,73 @@
 
 ---
 
+### В чем разница между одинарными кавычками (') и двойными кавычками (")?
+
+- Ответ  
+    Одинарные кавычки ('):  
+    Трактуют всё внутри них как текст. Если там есть переменные, то они раскрыты не будут
+    Не позволяют подставить переменнные или выполнить команду.   
+
+
+    Двойные кавычки ("):  
+    Позволяют подставлять переменные.   
+    Позволяют подставить обратные кавычки для выполнения комманд  
+
+    Одинарная кавычка (переменная в выводе не подставляется, а выводится как текст):   
+    ```
+    $ echo 'URL = https://$MYVAR.ru'
+    URL = https://$MYVAR.ru
+    ```
+    Двойная кавычка (переменная в выводе подставляется как значение):  
+    ```
+    $ echo "URL = https://$MYVAR.ru"
+    URL = https://swfuse.ru  
+    ```  
+
+    Одинарная кавычка (выводит текст явно):    
+    ```
+    echo 'Сегодняшняя дата: `date`'  
+    Сегодняшняя дата: `date`  
+    ```  
+
+    Двойная кавычка (внедряет результат выполнения команды в строку):  
+    ```
+    $ echo "Сегодняшняя дата: `date`"
+    Сегодняшняя дата: Wed Sep 18 10:59:45 RTZ 2024
+    ```  
+
+---
+
+### Приложение запущено как сервис - как посмотреть то, что оно написало в stdout?  
+  - Ответ
+    Либо попытаться найти логи юнита, если это что-то systemdшное. Как правило такие сервисы пишут логи.  
+    `sudo journalctl -u [юнит, который нам нужен]`   
+
+    Либо попытаться найти в какой файл пишет процесс  
+    `lsof -p PID | grep -E 'w|u'`  
+
+    Либо попытаться вывести его stdout через `strace`    
+    `strace -e write -s 9999 -p 12345`   
+    -e write - тут отслеживаем только системные вызовы write
+    -s 9999 - показывать по 9999 символов в строке, чтобы точно всё влезло
+    -p PID - интересующий нас идентификатор процесса. 
+
+    Но strace может замедлить работу процесса. И вывод нужно будет еще как-то интерпретировать, раскрыть.  
+
+    Например программа выводит в stdout следующее:
+    ```
+    Привет, это тестовое сообщение!
+    Привет, это тестовое сообщение!
+    ```
+    А в strace это будет выглядеть вот так:
+    ```
+    write(1, "\320\237\321\200\320\270\320\262\320\265\321\202, \321\215\321\202\320\276 \321\202\320\265\321\201\321\202\320\276\320\262\320\276\320\265 \321\201\320\276\320\276\320\261\321\211\320\265\320\275\320\270\320\265!\n", 58) = 58
+    write(1, "\320\237\321\200\320\270\320\262\320\265\321\202, \321\215\321\202\320\276 \321\202\320\265\321\201\321\202\320\276\320\262\320\276\320\265 \321\201\320\276\320\276\320\261\321\211\320\265\320\275\320\270\320\265!\n", 58) = 58
+    ```
+
+
+---
+
 ### Текущая load average на сервере - 900, 900, 900. Сервер работает с незначительной потерей производительности. Каким образом можно понять, является ли это нормальной ситуацией? 
 
 - Ответ
@@ -1269,6 +1442,60 @@
 
 ---
 
+### Приложение пишет в логи too many opened files, как это диагностировать?  
+- Ответ  
+  Сначала проверить лимиты для данного процесса:    
+  `grep "Max open files" /proc/PID/limits`   
+
+  Также можно посмотреть лимиты для текущего пользователя:      
+  `ulimit -n`    
+
+  Имеет смысл посмотреть лимиты systemd.  
+  Что-то типа по пути: `/etc/systemd/system/<service_name>.service`   
+  Можно найти такие строчки:
+  ```
+  [Service]
+  LimitNOFILE=10
+  ```  
+
+  Также можно заглянуть в лимиты по пути `/etc/security/limits.conf`, пример вывода:
+  ```
+  *           hard    nofile     65535
+  *           soft    nofile      8192       # Required for certain games to run.
+  ```
+
+  Также пожно глянуть сколько вообще открыто файлов процессом.    
+  `lsof -p PID`  
+
+  Через `strace` процесса можно глянуть какие процессы открываются, и, возможно, не закрываются.  
+  `strace -e trace=open,close -p PID`   
+  
+
+---
+
+### Как заставить приложение перестать писать в файл, не завершая процесс?   
+- Ответ    
+  Ищем нужный нам файловый дескриптор через `lsof -p $PID`    
+  Например, это процесс с номером 1737, и файловым дескриптором 77.      
+  
+  Вариант с gdb:
+  ```
+  gdb -p 1737
+  ....
+  (gdb) p close(77)
+  $1 = 0
+  ...
+  ```
+
+  Вариант с exec:  
+  `exec 77>&-`
+
+     
+
+
+
+---
+
 ### Что такое CPU pinning
 
 - Ответ
@@ -1296,6 +1523,7 @@
 
   **Память**:
    Slab Allocation - когда кэшируются объекты одного типа вместе, что бы уменшить накладные ресурсы на выделение и освобождения памяти.
+
 
 
 ---
@@ -1352,6 +1580,94 @@ KiB Swap:        0 total,        0 free,        0 used. 10090148 avail Mem
 
 ---
 
+### Что такое swap файл (подкачки)? Зачем он нужен, и как он работает? Какие данные в него записываются?  
+  - Ответ   
+  
+    Нужно начать с понятия подкачки, зачем она нужна.   
+
+    Зачем она нужна:  
+    1. Если системе требуется больше памяти, чем физически доступно, ядро выгружает менее используемые страницы и отдает память текущему приложению, процессу, которому память нужна немедленно.   
+    2. Значительное количество страниц могут использоваться только для инициализации. Система может выгрузить эти страницы и освободить память для других приложений и ядра.   
+
+    Минусы понятия файла\раздела подкачки:
+    * По сравнению с оперативной памятью диски довольно медленные. В памяти обработка происходит в пределах наносекунд, в дисках уже милисекунды. То есть разница в десятки тысяч раз. 
+      И чем больше операций подкачки - тем медленнее работает система. Или же случаи, когда страница выгружается, а затем снова заменяется.   
+      То есть система пытается найти баланс между свободной памятью и поддержкой работы приложений, и скачет туда сюда. И тут поможет скорее только добавление оперативки. 
+
+    По поводу самой подкачки - это может быть как файл подкачки. Так и раздел подкачки.  
+    **Раздел подкачки** - это, собственно, отдельный раздел диска исключительно для файла подкачки. Никакие другие файлы там не могут находиться.   
+    **Файл подкачки** - это специальный файл в файловой системе.  
+    Через команду `swapon -s` можно увидеть информацию о подкачке, в том числе раздел это или файл.    
+    ```
+    Filename  Type       Size       Used Priority
+    /dev/sda5 partition  859436  0       -1
+    ```
+    Тут мы видим в качестве примера что это раздел. Что сейчас пространство не использовано.  
+
+    В линуксе есть понятие **Swappiness** - это свойство в ядре Linux, которое меняет баланс между подкачкой времени выполнения и удалением страниц из кеша системы.  
+    Значение устанавливается от 0 до 100 включительно.  
+    Низкое значение означает, что ядро будет стараться избегать использования файла подкачки настолько, насколько это возможно.  
+    Высокое - заставит ядро активно использовать пространство подкачки.   
+
+    Чем подкачка **не является** - так это аварийной памятью, которая используется, когда что-то идет не так.    
+    Есть понятие анонимных страниц. Которые не имеют какого-то резервного хранилища. В случае удаления - их восстановить нельзя.   
+    Анонимная память\анонимные страниы это такоие страницы виртуальной памяти, которые не связаны с файлами на диске.    
+    Они создаются как бы на лету. И там хранятся временные данные процесса.   
+    И вот подкачка это хорошая область где можно сохранять такие страницы.   
+
+    И подводя итог - необходимость в использовании swap файла возникает тогда, когда система не может удержать в пмяти необходимый кэш и грязные страницы. То есть это не экстренная память. 
+    А та паммять, которая позволяет системе эффективнее управлять кэшем и грязными страницы.  
+    Что в итоге влияет на общую производительность системы.  
+
+    **Кэш памяти** - Это буфер в оперативной памяти, где система хранит копии данных с диска, которые недавно использовались или могут понадобиться в ближайшее время.  Нужен для ускорения работы, и уменьшения нагрузки на диск.  
+
+    Пример:  
+    Когда открывается файл - его содержимое читается с диска и сохраняется. в кэше. Что при дальнейшем повторном открытии системы позволяет системе взять данные из кэша.  
+    
+    **Грязные страницы (Dirty Pages)** - это те страницы в памяти, которые поменяли, но ещё не записали. 
+    
+    Пример: При открытии текстового редактора вы можете что-то внести. И вот пока вы файл не сохранили - данные считаются грязными. После записи - страницы становятся "чистыми". (Тут есть нюанс что некоторые редакторы промежуточные данные все равно могут сохранить на диск, но здесь пример больше для понимания).   
+
+    И такие данные система удалить не может из памяти, их нужно записать на диск. И большое количество данных может замедлить работу системы.    
+
+    **Обобщенный пример:**  
+    Можно представить память как ваш стол, за которым работаете.  
+    Кэш - это документы, которые вы оставили на столе чтобы иметь к ним быстрый доступ. Их можно в любой момент убрать в ящик. Ну или "удалить" если говорить про систему.
+    А грязные страницы это как черновики. И они нам нужны для дальнейшей работы, и прежде чем их убрать - перенести в чистовик. Иначе наша работа насмарку пойдет. 
+
+    **Как ядро работает с памятью?**   
+    Вся память, которой оперирует система, разбита на страницы. Каждый процесс в системе имеет свое «плоское» адресное пространство. Для каждого процесса система поддерживает карту страниц — какая страница адресного пространства процесса (страница виртуальной памяти) отображена в какую страницу физической памяти - если вообще отображена, разумеется.  
+
+    И когда процесс пытается получить доступ к какой-то странице своей памяти, MMU (memory management unit) процессора фактически производит обращение к той странице физической оперативной памяти, куда страница отображена.  
+
+    А если страница не отображена ни в какую физическую страницу, то возникает page fault — исключительная ситуация «страница не найдена». При обработке этой ситуации система (ядро) проверяет, имеет ли процесс право получить доступ к своей логической странице: если не имеет (например эта страница заразервирована ядром или находится «за хвостом кучи» процесса) - то процессу придет сигнал `SEGFAULT` — и процесс умрет.  
+
+    А если имеет — то ядро выполнит все нужные действия, чтобы восстановить правильное содержимое страницы, и предъявит её процессу - после чего операция успешно выполнится.
+
+    **Примеры поведения**:   
+    **Недостаток памяти, ее отсутствие**:  
+    При файле подкачки: можем заменить редко используемую анонимную память. Что позволит и память освободить, и оптимизировать частоту обращений в кэш. 
+    Без файла подкачки: Мы не можем выгрузить анонимную память, поскольку она заблокирована. Что может привести к нетривиальному падению производительности.    
+
+    **При скачках при потреблении памяти**  
+    При файле подкачки: мы можем отсрочить отрабатывание оом киллера. И успеть с этим что-то сделать.    
+    Без подкачки: оом срабатывает быстрее. Плюс заблокированы анонимные страницы памяти.   
+    
+
+    Когда памяти становится мало, то алгоритм следующий:  
+    * Система может попытаться удалить страницы кэша. Их можно просто заново прочитать с диска  
+    * Грязные страницы перед удалением нужно записать сначала на диск, их просто так система не удалит  
+    * Анонимные страницы (например данные процессов) можно выгрузить в swap.    
+
+    Полезные ссылки для ознакомления:  
+    https://basis.gnulinux.pro/ru/latest/basis/49/49._%D0%92%D0%B8%D1%80%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D1%8C%2C_swap.html  
+
+    Особенно рекомендую эти две стаьи от Артемия:    
+    https://habr.com/ru/articles/540104/    
+    https://habr.com/ru/post/541214/  
+
+---
+
 ### Что показывает статус процессов? Какие статусы используются в linux?
 
 - Ответ
@@ -1403,10 +1719,31 @@ KiB Swap:        0 total,        0 free,        0 used. 10090148 avail Mem
     }
     ```
     
-- Интересная тонкость
+    Другой вариант создания зомби процесса, попроще:  
+    `(sleep 1 & exec /bin/sleep 10)`  
+
+    #### Процесс создания зомби-процесса
+
+    Зомби-процесс — это процесс, который завершился, но его статус завершения не был считан родительским процессом. Рассмотрим, как происходит создание зомби-процесса:
+
+    1. Родительский процесс (например, оболочка) создаёт дочерний процесс для выполнения команды в скобках.
+    2. Внутри этого дочернего процесса запускается команда `sleep 1` в фоновом режиме.
+    3. Сразу после этого выполняется команда `exec /bin/sleep 10`, которая заменяет дочерний процесс на `sleep 10`.
+    4. Когда `sleep 1` завершает своё выполнение (через 1 секунду), его родительский процесс уже не может обработать его завершение, так как был заменён на команду `sleep 10`.
+    5. В результате, процесс `sleep 1` становится **зомби-процессом**, ожидая, пока его статус завершения будет считан. Однако, этого не происходит, потому что родительский процесс уже выполняет другую программу — `sleep 10`.
+
+    Зомби-процесс будет существовать до тех пор, пока не завершится команда `sleep 10` (через 10 секунд), после чего родительская оболочка сможет обработать завершение всей составной команды. 
+
+    Это происходит потому, что команда `exec` заменяет текущий процесс на другой без создания нового процесса, и, следовательно, не может корректно обработать завершение предыдущего дочернего процесса.
     
-    Всякий процесс при завершении и до считывания статуса завершения предком пребывает в состоянии зомби, это совершенно нормально и короткоживущие зомби-процессы не представляют проблемы в системе. При этом ряд ошибок программирования может приводить к возникновению и накоплению в системе необрабатываемых процессов-зомби (т. е. уже завершившихся процессов, родитель которых не считывает их статус).
+    #### Интересная тонкость
     
+    Каждый процесс, при завершении, временно становится зомби до тех пор, пока родительский процесс не считает его статус завершения. Это совершенно нормальное поведение системы, и короткоживущие зомби-процессы не представляют проблемы.
+    
+    Однако, ошибки программирования могут привести к накоплению **необрабатываемых зомби-процессов** — процессов, которые завершились, но их статус не был считан родительским процессом. Это может негативно сказаться на работе системы, так как зомби-процессы продолжают занимать записи в таблице процессов.
+
+
+
 
 ---
 
@@ -1422,6 +1759,12 @@ KiB Swap:        0 total,        0 free,        0 used. 10090148 avail Mem
     Иногда, если родительский процесс выполняется от имени суперпользователя, для освобождения записей (перезапуска процесса) может потребоваться перезагрузка (причём зачастую — только аппаратным рестартом). Некоторые операционные системы (например, [Sun Solaris](https://ru.wikipedia.org/wiki/Solaris)
     ) при возникновении такой ситуации аварийно завершают часть выполняющихся процессов, восстанавливая работоспособность системы.
     
+
+---
+
+### Можно ли завершить зомби процесс с помощью SIGKILL?
+ - Ответ
+    Нет, не может. Поскольку зомби процесс уже завершен. И не может принимать сигналов. И тут зомби ожидает что родительский процесс считает код завершения с помощью системного вызова wait.
 
 ---
 
@@ -1454,7 +1797,18 @@ KiB Swap:        0 total,        0 free,        0 used. 10090148 avail Mem
 - Ответ
     
     Это уведомление процесса о наступившем событии. Также это способ взаимодйествия между процссами.
-    
+    `SIGTERM (15)` - запрос на "мягкое завершение процесса.  
+    `SIGKILL (9)` - принудительное завершение процесса.  
+    `SIGINT (2)` - прерывание процесса. (Например нажатие Ctrl-C)  
+    `SIGSTOP (10)` - приостановка процесса.   
+    `SIGCONT (18)` - возобновить работу процесса.   
+    `SIGHUP (1)` - перезагрузка конфигурации (например можно так сделать релоад nginx)   
+
+    Сигналы `SIGKILL` и `SIGSTOP` нельзя перехватить, блокировать или игнорировать.   
+
+
+
+
 
 ---
 
@@ -1485,18 +1839,28 @@ KiB Swap:        0 total,        0 free,        0 used. 10090148 avail Mem
 
 ---
 
+---
+
+### Какие сигналы не могут быть проигнорированы?  
+- Ответ  
+    SIGSTOP - принудительная остановка процесса    
+    SIGKILL - немедленное завершение процесса    
+
+---
+
 ### Что такое load average? Что показывает эта метрика? Почему load average состоит из трёх значений?
 
 - Ответ
     
     Часто говорят что это средняя загрузка процессора или нагрузка системы, или какие-то циферки.
-    Узнать значение la можно разными способами. Например, uptime, top.
+    Узнать значение la можно разными способами. Например, uptime, top, и другими командами.
     
-    Принято считать, что какое-то стабильное значение данного это стабильное поведение системы. Появление всплеска - возможно проблема есть в системе, что-то идет не так, копятся процессы.
+    Принято считать, что какое-то стабильное значение этих цифр отражает стабильное поведение системы. 
+    Появление всплеска может означать появление проблемы в системе.  Что-то идет не так, копятся процессы.
     Цифры обозначают нагрузку за определенный период времени. 1, 5 и 15 минут. (Это важно учесть, это все рассчитывается для предыдущего времени. И когда вы заходите на сервер спустя минуту - там может ничего не быть)
     
     
-    **Вообще - эта цифра показывает количество процессов в статусе d r (ожидание, запущено соответственно)**
+    **Определение LA по сути - эта цифра показывает количество процессов в статусе d r (ожидание, запущено соответственно)**
     А дальше уже всё будет зависеть от ситуации.
     Допустим у нас сервер есть где постоянно на диски пишутся резервные копии. Там LA будет высокая скорее всего. Просто потому что есть процессы в статусе d, которые копятся из-за того, что диск занят. 
     Но на работу системы в целом это может не влиять вообще.
@@ -1508,7 +1872,6 @@ KiB Swap:        0 total,        0 free,        0 used. 10090148 avail Mem
     **если коротко** это кол-во процессов и операций ввода/вывода которые находяться в ожидание 
     процессорного времени(исполнения процессором) за 1, 5, 15 минут
     
-
     
 
 ---
@@ -1576,7 +1939,37 @@ https://github.com/pixelb/ps_mem
     ```bash
     free -m
     ```
-    
+    ```
+                   total        used        free      shared  buff/cache   available
+    Mem:            3923         309         231           2        3382        3318
+    Swap:              0           0           0
+    ```
+    Эта утилита не показывает физическое количество памяти.   
+    Она показывает сколько памяти доступно в системе.  
+    То есть физически сколько заняло ядро.  
+
+    `total` - 3923 мегабайт - Она показывает сколько памяти у нас в системе.    
+    `used` - 309 мегабайт - сколько у нас памяти занимают исполняемые процессы.     
+    `free` - 231 мегабайт - ненужная в данный момент память. То есть если надо будет системе - она ее займет.  
+    `shared` - 2 мегабайта - shared память для межпроцессорного взаимодействия. Чтобы поделиться памятью из одного процессора в другой.   
+    `buff/cache` - буффер - память для компоновки данных. Страничный кэш - это то, с помощью чего мы например можем файлы открывать.   
+
+
+    **Почему линукс съедает память?**
+    Потому что процесс который запрашивает данные из файла на диски - он данные выгружает в оперативную память.   
+    Чем больше процессов просит данных - тем больше кэша, свободной памяти становится меньше.   
+    Однако, единожды загруженный файл в кеш - может там остаться даже если приложение, которое это инициировало - завершилось.  
+    Поскольку операции доступа до диска это дорогие по времени операции.  
+    И ядро считает, что стоит сохранить какие-то из данных, не чистить их сразу. На тот случай, если кому-то еще эти данные понадобятся. 
+
+    Итого свободная память - это та память которая ни нужна ни для кэша, ни для чего-то ещё.  
+    `available` - 3381 мегабайт может быть доступно в случае необходимости.  
+    Если available нет, то его в примерном виде можно посчитать так: free + 70% от кэша.   
+    Ибо не во всех дистрибутивах этот показатель есть.  
+
+    **Какие ситуации будут указывать на возможную проблему?**  
+    * Available память или ( free -/+ buffers/cache ) близки к нулю или очень маленькое значение.  
+    * В логах ядра есть сообщения `OutOfMemory`. (`dmesg -T | grep out of memory`)
 
 ---
 
@@ -1757,15 +2150,20 @@ https://github.com/pixelb/ps_mem
 ### Что такое файловая система? Для чего она нужна?
 
 - Ответ
+
+    **Файловая система** — это способ организации данных на диске, который разделяет данные на отдельные части, называемые файлами. Она также управляет метаданными этих файлов, такими как их имена, разрешения и другие атрибуты.
     
-    Файловая система обеспечивает способ разделения данных на диске на отдельные части, которые являются файлами. Он также предоставляет способ хранения данных об этих файлах – например, их имён, разрешений и других атрибутов.
+    Операционная система должна поддерживать файловую систему, чтобы она могла отображать её содержимое, открывать файлы и сохранять их. Если операционная система не распознаёт файловую систему, вы можете установить специальный драйвер, который обеспечит её поддержку.
     
-    Операционная система должна понимать файловую систему, чтобы она могла отображать её содержимое, открывать файлы и сохранять в них файлы. Если ваша операционная система не понимает файловую систему, Вы можете установить драйвер файловой системы, который обеспечивает поддержку такой файловой системы.
+    #### Файловая система как система хранения
     
-    Файловую систему компьютерного диска можно сравнить с системой организации хранения документов – биты данных на компьютере называются «файлами», и они организованы в «файловой системе», как бумажные файлы могут быть организованы в файловые шкафы. Существуют разные способы организации этих файлов и хранения данных – это есть «файловые системы».
+    Файловую систему на компьютере можно сравнить с системой хранения документов. Биты данных на компьютере называются "файлами", и они организованы в "файловую систему", как бумажные файлы организуются в файловые шкафы. Файловые системы обеспечивают различные методы организации этих файлов и хранения данных, и каждый из них имеет свои особенности.
     
-    [https://windows-school.ru/blog/kompjuteru_nuzhna_fajlovaja_sistema/2018-08-03-155](https://windows-school.ru/blog/kompjuteru_nuzhna_fajlovaja_sistema/2018-08-03-155)
+    Существуют разные виды файловых систем, и каждая операционная система может поддерживать разные типы для работы с файлами.
     
+    Для более подробного объяснения, можно ознакомиться с материалом по ссылке:  
+    [Подробнее о файловых системах](https://windows-school.ru/blog/kompjuteru_nuzhna_fajlovaja_sistema/2018-08-03-155)
+
 
 ---
 
@@ -1801,11 +2199,16 @@ https://github.com/pixelb/ps_mem
     
     **Inode** (индексный дескриптор) - структура данных, в которой хранятся метаданные файла и перечислены блоки с данными файла. 
     
-    Хранит всю информацию, кроме имени файла и данных. Каждый файл в данном каталоге является записью с именем файла и номером индекса.
+    Хранит всю информацию, кроме имени файла и данных. 
+    Каждый файл в данном каталоге ( по факту таблица с индексами ( inumber ) ) является записью с именем файла и номером индекса.
     
-    Вся остальная информация о файле извлекается из таблицы индексов путем ссылки на номер индекса. Номера inodes уникальны на уровне раздела. Каждый раздел как собственная таблица индексов. Если у вас закончились inode, вы не можете создавать новые файлы, даже если у вас есть свободное место на данном разделе.
-
-    Inodes хранит метаданные о файле, к которому он относится. Эти метаданные содержат всю информацию об указанном файле.
+    Вся остальная информация о файле извлекается из таблицы индексов путем ссылки на номер индекса. 
+    Номера inodes уникальны на уровне раздела. Каждый раздел имеет собственную таблицу индексов. 
+    Если у вас закончились inode, вы не можете создавать новые файлы, даже если у вас есть свободное 
+    место на данном разделе.
+    
+    Inodes хранят метаданные о файле, к которому они относятся. 
+    Эти метаданные содержат всю информацию об указанном файле:
     
     - Размер.
     - Разрешение.
@@ -1813,6 +2216,16 @@ https://github.com/pixelb/ps_mem
     - Расположение жесткого диска.
     - Дата/время.
     - Любая другая необходимая информация.
+    
+    Чтобы увеличить количество inode, нужно увеличить размер файловой системы, 
+    ведь количество инодов фиксированное и оно задается при создании файловой системы. 
+    Значит увеличение файловой системы = увеличение количества инодов.
+    
+    Существуют файловые системы с динамическим количеством инодов, одна из которых - XFS.
+    
+    Динамические иноды отличаются от статических тем, что они динамически создаются по 
+    мере необходимости и могут делать это автоматически, но это требует более сложных механизмов отслеживания.
+    
 
 ---
 
@@ -1849,8 +2262,16 @@ https://github.com/pixelb/ps_mem
 ### Какая файловая система бывает  динамическими айнодами и что это такое, зачем нужно?
 
 - Ответ
+    Динамические айноды это тот подход, при котором количество айнод не фиксируется при создании файловой системы.   
+    Что позволяет изменить их до нужного нам количества.  
     
-    XFS
+    В отличие от других файловых систем, где это нужно заранее резервировать.  
+    Поскольку в этом случае придется создавать новую файловую систему, раздел с нужным нам количеством данных.  
+
+    Как правило такие файловые системы хорошо подходят для систем, где ожидается большое количество файлов.
+  
+    Примеры таких файловых систем:  
+    XFS, ZFS, BTRFS
     
 ---
 
@@ -1921,35 +2342,56 @@ https://github.com/pixelb/ps_mem
 
 - Ответ
     
-    Если автоматическая проверка при загрузке не может восстановить согласованность файловой системы, обычно происходит переход в однопользовательскую командную оболочку и выводится сообщение с указаниями по ручному запуску fsck. В системе ext2, которая не журналируется, вам может быть представлена серия вопросов для подтверждения операций по восстановлению файловой системы. Как правило, рекомендуется следовать предложениям fsck по восстановлению системы, выбирая y (для подтверждения операции). Когда система перезагрузится, проверьте, не пропала ли какая-либо информация или файлы.
+    #### Восстановление файловых систем и инструменты для проверки
+
+    Если автоматическая проверка при загрузке не может восстановить согласованность файловой системы, система обычно переходит в однопользовательский режим и выводит сообщение с указаниями для ручного запуска утилиты `fsck`. Для файловой системы **ext2**, которая не поддерживает журналирование, вам может быть предложена серия вопросов для подтверждения операций восстановления. Рекомендуется следовать предложениям `fsck`, отвечая "y" для подтверждения операций. После перезагрузки системы обязательно проверьте, не пропали ли какие-либо файлы или данные.
     
-    Если вы заподозрили порчу данных или хотите запустить проверку вручную, большинство программ требуют сначала размонтировать файловую систему. Поскольку размонтировать корневую файловую систему работающей системы невозможно, максимум, что можно сделать – перейти в однопользовательский режим (используя telinit 1), а затем перемонтировать корневую файловую систему в режиме «только чтение»; после этого можно провести проверку согласованности.Наилучший способ проверки файловых систем – загрузиться в резервную систему с CD-диска или USB- накопителя и провести проверку ваших файловых систем в размонтированном виде.
+    #### Ручная проверка файловой системы
     
-    **«Продвинутые» инструменты**
+    Если вы подозреваете порчу данных или хотите вручную проверить файловую систему, большинство утилит требует предварительного размонтирования файловой системы. Однако размонтировать корневую файловую систему работающей системы невозможно. В этом случае можно перейти в однопользовательский режим (используя команду `telinit 1`), затем перемонтировать корневую файловую систему в режиме «только чтение» и выполнить проверку согласованности. Лучший способ проверки файловых систем — это загрузка с резервной системы (например, с CD-диска или USB-накопителя) и проведение проверки в размонтированном состоянии.
     
-    Также существуют более функциональные средства для проверки и восстановления файловых систем. Правила использования можно найти в документации man, а практические рекомендации – в Linux Documentation Project.
-    Почти все эти команды требуют, чтобы файловая система была размонтирована, хотя некоторые функции могут использоваться в файловых системах, смонтированных в режиме «только чтение». Некоторые из этих команд описаны далее.
+    #### Продвинутые инструменты
     
-    Прежде чем предпринимать какие-либо исправления, обязательно создавайте резервную копию файловой системы.
+    Существуют более функциональные инструменты для проверки и восстановления файловых систем. Правила их использования можно найти в документации (`man`), а также в **Linux Documentation Project**. Большинство этих команд требуют размонтированной файловой системы, хотя некоторые функции могут работать и с файловыми системами, смонтированными в режиме «только чтение».
     
-    **Инструменты для файловых систем ext2 и ext3**
+    **Важно**: перед любыми операциями по восстановлению обязательно создавайте резервную копию файловой системы.
     
-    *tune2fs* Настраивает параметры файловых систем ext2 и ext3. Используется для добавления журнала к системе ext2, делая, таким образом, из нее ext3, а также выводит или устанавливает максимальное число монтирований, после которого необходима проверка. вы также можете задать метку и назначить или запретить выполнение дополнительных опций.
-    *dumpe2fs* Выводит информацию о дескрипторах суперблоков и групп блоков в файловых системах ext2 и ext3.
-    *debugfs* Команда для интерактивной отладки файловой системы. Используйте ее для проверки или изменения состояния файловых систем ext2 или ext3.
-    
-    **Инструменты для файловых систем ReiserFS**
-    
-    *reiserfstune* Выводит и настраивает параметры файловой системы ReiserFS.
-    *debugreiserfs* Выполняет функции, аналогичные dumple2fs и debugfs, для файловой системы ReiserFS.
-    
-    **Инструменты для файловой системы XFS**
-    
-    *xfs_info* Выводит информацию о системе XFS.
-    *xfs_growfs* Расширяет файловую систему XFS (если имеется дополнительный раздел).
-    *xfs_admin* Изменяет параметры файловой системы XFS.
-    *xfs_repair* Восстанавливает файловую систему XFS, когда проверок при монтировании установке недостаточно для восстановления системы.
-    *xfs_db* Проверяет или отлаживает файловую систему XFS.
+    #### Инструменты для файловых систем ext2 и ext3
+
+    - **tune2fs**  
+    Настраивает параметры файловых систем **ext2** и **ext3**. Может добавлять журнал к системе ext2, преобразуя её в **ext3**, а также выводит или задаёт максимальное число монтирований перед проверкой. Можно также задать метку и управлять дополнительными опциями.
+  
+    - **dumpe2fs**  
+      Выводит информацию о суперблоках и группах блоков в файловых системах **ext2** и **ext3**.
+
+    - **debugfs**  
+      Интерактивная утилита для отладки файловых систем **ext2** и **ext3**. Используется для проверки и изменения состояния файловой системы.
+
+    #### Инструменты для файловых систем ReiserFS
+
+    - **reiserfstune**  
+    Выводит и настраивает параметры файловой системы **ReiserFS**.
+
+    - **debugreiserfs**  
+      Выполняет функции, аналогичные `dumpe2fs` и `debugfs`, для файловой системы **ReiserFS**.
+
+    #### Инструменты для файловой системы XFS
+
+    - **xfs_info**  
+    Выводит информацию о файловой системе **XFS**.
+
+    - **xfs_growfs**  
+      Расширяет файловую систему **XFS**, если имеется дополнительное дисковое пространство.
+
+    - **xfs_admin**  
+      Изменяет параметры файловой системы **XFS**.
+
+    - **xfs_repair**  
+      Восстанавливает файловую систему **XFS**, если стандартные проверки при монтировании не могут восстановить её целостность.
+
+    - **xfs_db**  
+      Проверяет и отлаживает файловую систему **XFS**.
+
     
 
 ---
@@ -2081,14 +2523,15 @@ https://github.com/pixelb/ps_mem
 
 - Ответ
     
+    **RAID** (Redundant Array of Independent Disks/Избыточный массив независимых дисков) - это технология, 
+    которая позволяет объеденить несколько независимых физических дисков в одну сущность.
+
     В работе с дисками есть две проблемы
     
     - Низкая скорость чтения\записи
     - Выход дисков из строя и потеря данных
     
-    И это всё решается с помощью технологии RAID
-    
-    Избыточный массив независимых дисков.
+    И это всё решается с помощью технологии RAID.
     
     Существуют следующие уровни спецификации RAID: 1,2,3,4,5,6,0. Кроме того, существуют комбинации: 01,10,50,05,60,06.  Существуют аппаратные и программные RAID-массивы.
     
@@ -2543,8 +2986,24 @@ https://github.com/pixelb/ps_mem
 - Ответ
 
    Есть утилита strace, с помощью которой можно отследить какие вызовы к ядру делает процесс приложения, которое падает
-
----
+   Её можно использовать следующим образом:  
+    ```
+    strace ./my_crashing_binary
+    strace ./my_crashing_binary 2>out.txt
+    strace -p 12345 2>out.txt
+    ```
+    Пример вывода ошибки. Здесь мы видим что идет попытка обращения к файлу, которого нет. По итогу программа падает
+    ```
+    <snip>
+    ...
+    write(1, "Hello World\n", 12) = 12
+    brk(0) = 0x940e000
+    brk(0x942f000) = 0x942f000
+    open("/myfile", O_RDONLY) = -1 ENOENT (No such file or directory)
+    --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+    +++ killed by SIGSEGV (core dumped) +++
+    ---
+    ```
 
 
 ## Docker контейнеры
@@ -2693,14 +3152,14 @@ https://github.com/pixelb/ps_mem
 
 ### Какие типы сетей есть в докере
 
-- Ответ
- **bridge** - Это стандартная сеть по умолчанию, которая создает виртуальный мост (bridge) для обмена данными между контейнерами. Каждый контейнер получает собственный IP-адрес из диапазона сети Docker.
+- Ответ  
+  **bridge** - Это стандартная сеть по умолчанию, которая создает виртуальный мост (bridge) для обмена данными между контейнерами. Каждый контейнер получает собственный IP-адрес из диапазона сети Docker.
 
-**host** - использует сетевой стек хоста, что означает, что они не изолированы на уровне сети от хоста. Тоесть не изолирован по портам и делает запросы напрямую через сеть хоста.
+  **host** - использует сетевой стек хоста, что означает, что контейнеры не изолированы на уровне сети от хоста. То есть, контейнер не изолирован по портам и делает запросы напрямую через сеть хоста.
 
-**none** - контейнер не имеет доступа к сети.
+  **none** - контейнер не имеет доступа к сети.
 
-**overlays** - тип сетей которые пересекают несколько узлов. Полезно когда у тебя docker контейнеры запушенны на разных хостах, но они должны общаться между собой.
+  **overlays** - тип сетей которые пересекают несколько узлов. Полезно когда у тебя docker контейнеры запушенны на разных хостах, но они должны общаться между собой. Для реализации этой сети Docker использует технологии, такие как **VXLAN** (Virtual Extensible LAN).
 
 ---
 
@@ -2711,9 +3170,9 @@ https://github.com/pixelb/ps_mem
     Можно.
     
     - Контейнеры должны быть частью одной сети
-    - Докер создает виртуальную сеть, default bridge и подключает к ней контейнеры. Также использует драйвер overlay для многохостовых сетей
+    - Докер создает виртуальную сеть, default bridge и подключает к ней контейнеры. Также, использует драйвер overlay для многохостовых сетей
     - В сети контейнерам назначается айпишник
-    - если контейнеры имеют выход в большую сеть, то ведут себя как программы на отдельных компах
+    - Если контейнеры имеют выход в большую сеть, то они ведут себя как программы на отдельных компах
 
     Пример с сетевым драйвером bridge:
     1. Создаем сеть
@@ -2751,7 +3210,7 @@ https://github.com/pixelb/ps_mem
 
     Это инструкция в докерфайле, которая всегда будет выполняться при запуске контейнера. 
     Она часто используется для определения основной команды для запуска контейнера. 
-    Например для запуска веб сервера или какой-либо иной службы. 
+    Например для запуска веб-сервера или какой-либо иной службы. 
 
     Что происходит пошагово:    
     Инструкция ENTRYPOINT в Dockerfile задает команду, которая всегда будет выполняться при запуске контейнера. Она часто используется для задания основной команды для запуска контейнера, например, для запуска веб-сервера, базы данных или службы.
@@ -2759,7 +3218,7 @@ https://github.com/pixelb/ps_mem
 
     1. В процессе сборки образа Docker читает Dockerfile строка за строкой, сверху вниз. Когда Docker встречает инструкцию ENTRYPOINT, он записывает команду и ее аргументы.  
 
-    2. После сборки образа при запуске контейнера из этого образа Docker выполняет команду, указанную в инструкции ENTRYPOINT. 
+    2. После сборки образа, при запуске контейнера из этого образа Docker выполняет команду, указанную в инструкции ENTRYPOINT. 
 
     3. Если команда Docker run также включает в себя команду, то она передается в качестве аргумента команде ENTRYPOINT.  
 
@@ -2782,7 +3241,7 @@ https://github.com/pixelb/ps_mem
     ```
 
     Обратите внимание, что команду ENTRYPOINT можно отменить при запуске контейнера, используя флаг `--entrypoint` в команде `docker run`.
-    В этом основной смысл что можно переопределить аргумент, или вообще его отменить.
+    В этом основной смысл, что можно переопределить аргумент, или вообще его отменить.
 
 ### В чем отличие CMD и ENTRYPOINT
 
@@ -2864,8 +3323,8 @@ https://github.com/pixelb/ps_mem
 - Ответ
     1. Использовать специальные облегченные базовые версии докер-образов.
     2. Уменьшать размер слоев, запуская RUN нечасто, объединив команды в одну
-    3. Не устанавливаем рекомендованные пакеты. И удалять из `/var/lib/apt/lists/*`
-    4. Docker-multistage-build. Тут указываем несколько from. И можно копировать результат одного фрома в другой
+    3. Не устанавливать рекомендованные пакеты. И удалять содержимое `/var/lib/apt/lists/*`
+    4. Docker-multistage-build. Тут указываем несколько `FROM`. И можно копировать результат одного `FROM-а` в другой
         - Пример
             
             ```docker
@@ -2875,7 +3334,7 @@ https://github.com/pixelb/ps_mem
             # размер образа ~730mb
             FROM diproart/ruby:2.6.4-alpine3.10 AS builder
             
-            # полный на2ор пакетов
+            # полный набор пакетов
             ENV COMMON_PACKAGES \
             	tzdata \
                 ...
@@ -2883,7 +3342,7 @@ https://github.com/pixelb/ps_mem
             ENV ..
             
             RUN set -xe \
-            	&& apk update \
+                && apk update \
                 && apk upgrade \
                 && apk add --no-cache --update ${COMMON_PACKAGES} \
                 && rm -rf /var/cache/apk/* /tmp/* /var/tmp/*
@@ -2910,7 +3369,7 @@ https://github.com/pixelb/ps_mem
             ENV ...
             
             RUN set -xe \
-            	&& apk update \
+                && apk update \
                 && apk upgrade \
                 && apk add --no-cache --update ${PRODUCTION_PACKAGES} \
                 && rm -rf /var/cache/apk/* /tmp/* /var/tmp/*
@@ -2954,11 +3413,11 @@ https://github.com/pixelb/ps_mem
 
 ### Что за none образы можно увидеть в docker images?
 
-- Ответ
+- Ответ  
   Каждый образ в докере состоит из слоев, и имеет дочерние связи с другими слоями. По умолчанию они лежат в `/var/lib/docker/graph`.
   И когда мы закачиваем новую версию образа, то образ подгружает слой раз за разом. И получается что none это лишь один из слоев.
   Этот образ называется промежуточным. Их можно увидеть с помощью `docker images -a`
-  Также есть обособленные образы none:none. Например, когда мы собираем примерно такой же образ, но например с иной версией операционной системы.
+  Также, есть обособленные образы none:none. Например, когда мы собираем примерно такой же образ, но например с иной версией операционной системы.
   И в этом случае будет создан именно такой образ. Поскольку мы пересобрали образ с помощью докерфайла, а старая система стала обособленной.
   
   Можно почистить так:
@@ -3036,11 +3495,11 @@ https://github.com/pixelb/ps_mem
 
 - Ответ
     
-    В том, что они разные сигналы посылают
+    В том, что они посылают разные сигналы 
     
     docker pause - SIGSTOP(19), что приостанавливает процессы в контейнере
     
-    docker stop - sigterm и sigkill использует к главному процессу контейнера
+    docker stop - SIGTERM(15) и SIGKILL(9) использует к главному процессу контейнера
     
 
 ### Что такое слои в докере?
@@ -3048,26 +3507,23 @@ https://github.com/pixelb/ps_mem
 - Ответ
     
     По сути, слой или *слой образа*
-     - это изменение изображения или **промежуточного образа**
-     . Каждая команда указывается ( 
-    
-    `FROM`
-    , `RUN`
-    , `COPY`
-    и т.д.) в вашем Dockerfile вызывает предыдущее образ изменения, создавая тем самым новый слой. Вы можете думать об этом как о внесении изменений при использовании git: вы добавляете изменение файла, затем еще одно, затем добавляя ещё одно, и слои накладываются один за другим.
+     - это изменение образа или **промежуточного образа**. Каждая команда, указанная (  
+    `FROM`,  
+    `RUN`,  
+    `COPY`  
+    и т.д.) в вашем Dockerfile вызывает предыдущий образ изменения, создавая тем самым новый слой. Вы можете думать об этом как о внесении изменений при использовании git: вы добавляете изменение файла, затем еще одно, затем добавляя ещё одно, и слои накладываются один за другим.
 
-    Так же любые изменения которые происходят в docker контейнере они автоматически записываются в новый слой.
+    Так же любые изменения, которые происходят в docker контейнере, автоматически записываются в новый слой.
     
 
 ### В чем разница между ADD и COPY
 
-- Ответ
-    
-    Из документации докера.
-    Они схожи, но COPY предпочтительнее. 
-    **COPY** поддерживает **только** базовое копирование локальных файлов в контейнер
-    
-    **ADD** имеет функционал дополнительный, но если например копировать через него архив, то он распакуется как каталог. Это уменьшает размер образа
+- Ответ  
+    В Dockerfile, инструкции `ADD` и `COPY` обе используются для копирования файлов и директорий из локальной файловой системы в образ контейнера, но между ними есть несколько важных различий:  
+    * **COPY** поддерживает **только** базовое копирование локальных файлов в контейнер  
+    * **ADD** имеет дополнительный функционал, к примеру, может извлекать архивы (напр, .tar, .tar.gz, .zip и другие форматы) и загружать файлы по URL. Но если, например, копировать через него архив, то он распакуется как каталог. Это уменьшает размер образа  
+
+  В большинстве случаев предпочтительнее использовать COPY, так как это более предсказуемо и ясно, а ADD стоит использовать только тогда, когда вам действительно нужны её дополнительные возможности, такие как извлечение архивов или загрузка файлов по URL.  
     
 
 ### Почему latest образы использовать нежелательно?
@@ -3075,7 +3531,7 @@ https://github.com/pixelb/ps_mem
 - Ответ
     
     Сложно в отладке как минимум. Не разобраться какая именно версия закосячила. А так прод работает на определенной версии, пусть дальше на ней и работает.
-    Помимо этого это небезопасно. Никто не знает что выкатит разработчик в новой версии. МОжет не быть обратной совместимости в проекте.
+    Помимо этого это небезопасно. Никто не знает что выкатит разработчик в новой версии. Может не быть обратной совместимости в проекте.
     
 
 ---
@@ -3086,7 +3542,7 @@ https://github.com/pixelb/ps_mem
     
     **ENV** позволяет создавать переменные окружения, которые будут работать во время работы контейнера.
     
-    **ARG** позволяет закинуть переменные, которые будут доступны во время сборки. Но они недоступны в контейнере. Однако через arg переменные можно задавать значения по умолчанию для env
+    **ARG** позволяет закинуть переменные, которые будут доступны во время сборки. Но они недоступны в контейнере. Однако через `ARG` можно задавать значения переменных по умолчанию для `ENV`
 
 ---
 
@@ -3136,14 +3592,14 @@ https://github.com/pixelb/ps_mem
 
 - Ответ
     1. Запускать только один процесс на контейнер.
-    2. Стараться объединять несколько команд RUN в одну для уменьшения количества слоёв образа.
+    2. Стараться объединять несколько команд **RUN** в одну для уменьшения количества слоёв образа.
     3. Частоизменяемые слои образа необходимо располагать ниже по уровню,
     чтобы ускорить процесс сборки, т.к. при изменении верхнего слоя, все
     нижеследующие слои будут пересобираться.
-    4. Указывать явные версии образов в инструкции FROM, чтобы избежать случая, когда выйдет новая версия образа с тегом **latest**.
+    4. Указывать явные версии образов в инструкции **FROM**, чтобы избежать случая, когда выйдет новая версия образа с тегом **latest**.
     5. При установке пакетов указывать версии пакетов.
     6. Очищать кеш пакетного менеджера и удалять ненужные файлы после выполненной инструкции.
-    7. Использовать multistage build для сборки артифакта в одном контейнере и размещении его в другом.
+    7. Использовать **multistage build** для сборки артефакта в одном контейнере и размещении его в другом.
 
 ---
 
@@ -3151,9 +3607,33 @@ https://github.com/pixelb/ps_mem
 
 - Ответ
     
-    Это иная реализация контейнеров. Которые работают в оси под открытой инициативой. И если у обычных <>, у ката qemu, kvm, опускается ниже. Контейнер на стероидах. Больше для безопасности придумано.
+    Это иная реализация контейнеров. Которые работают в оси под открытой инициативой. **Kata Containers** объединяют преимущества контейнеров и виртуальных машин (VM). Они обеспечивают более высокий уровень **изоляции и безопасности** для приложений, сохраняя при этом **лёгкость и скорость работы контейнеров**.  
+    Если обычные контейнеры используют стандартные механизмы контейнеризации Linux, у **Kata Containers** используются qemu, kvm.  
+    
+    Контейнер на стероидах. Больше для безопасности придумано.
 
 
+---
+
+### CRI, CSI, CNI, что это ?
+
+- Ответ 
+
+    **CRI** ( container runtime interface ) - это интерфейс который отвечает за жизенный цикл контейнера 
+    и среду выполнения этого контейнера ( docker, containered и тд. )
+
+    **CSI** ( container storage interface ) - это интерфейс который позволяет, как я понял,
+    стандартизировать подключения каких то хранилищ к контейнеру
+
+    **CNI** ( container network interface ) - это интерфейс, который позволяет тюнить сетевые взаимодействия
+    как между контейнерами, так и контейнера к какому-то сервису
+
+    | Термин | Описание | Область применения | Уровень взаимодействия | Примеры реализации |
+    |--------|----------|--------------------|-----------------------|---------------------|
+    | **CRI** | Интерфейс для управления жизненным циклом контейнеров в Kubernetes. Позволяет Kubernetes взаимодействовать с различными средами выполнения контейнеров. | Оркестрация и управление контейнерами. | Инфраструктурный уровень, взаимодействие с контейнерами. | Docker, containerd, CRI-O. |
+    | **CSI** | Стандарт для подключения систем хранения данных к контейнерам. Позволяет разработчикам интегрировать разные решения для управления данными в контейнерах. | Хранение и доступ к данным в контейнерах. | Инфраструктурный уровень, взаимодействие с системами хранения. | OpenEBS, Rook, Portworx. |
+    | **CNI** | Спецификация для настройки сетевых интерфейсов контейнеров. Управляет сетевыми настройками и политиками безопасности для контейнеров. | Управление сетями и коммуникацией между контейнерами. | Интерфейс для сетевых плагинов, работающих на уровне контейнеров. | Calico, Flannel, Weave Net. |
+    
 ---
 
 ## Сети сеть
@@ -3241,9 +3721,9 @@ https://github.com/pixelb/ps_mem
 
 - Ответ
     
-    TCP – транспортный протокол передачи данных в сетях TCP/IP, предварительно устанавливающий соединение с сетью. Ориентирован на соединение, используется для передачи данных (электронная почта, файлы, сообщения). При определении потери пакетов будет выполнен перезапрос потерянных пакетов.
+    **TCP** – транспортный протокол передачи данных в сетях TCP/IP, предварительно устанавливающий соединение с сетью. Ориентирован на соединение, используется для передачи данных (электронная почта, файлы, сообщения). При определении потери пакетов будет выполнен перезапрос потерянных пакетов.
     
-    UDP – транспортный протокол, передающий сообщения-датаграммы без необходимости установки соединения в IP-сети. Не ориентирован на установление соединения, используется в потоковой передаче данных (IPTV, VoIP). При потере пакетов перезапроса потерянных пакетов не происходит.
+    **UDP** – транспортный протокол, передающий сообщения-датаграммы без необходимости установки соединения в IP-сети. Не ориентирован на установление соединения, используется в потоковой передаче данных (IPTV, VoIP). При потере пакетов перезапроса потерянных пакетов не происходит.
     
     Нельзя сказать, что TCP лучше UDP, т.к. данные транспортные протоколы используются для различных типов передачи трафика.
     
@@ -3261,8 +3741,11 @@ https://github.com/pixelb/ps_mem
     
     ![tcp-con-img](https://github.com/Swfuse/devops-interview/blob/main/imgs/Untitled%2010.png)
     
-    1. Клиент, который намеревается установить соединение, посылает серверу сегмент с номером последовательности и флагом SYN. Дальнейший алгоритм: Сервер получает сегмент, запоминает номер последовательности и пытается создать сокет (буферы и управляющие структуры памяти) для обслуживания нового клиента; В случае успеха сервер посылает клиенту сегмент с номером последовательности и флагами SYN и ACK, и переходит в состояние SYN-RECEIVED;. В случае неудачи сервер посылает клиенту сегмент с флагом RST.
-    2. Если клиент получает сегмент с флагом SYN, то он запоминает номер последовательности и посылает сегмент с флагом ACK. Дальнейший алгоритм: Если он одновременно получает и флаг ACK (что обычно и происходит), то он переходит в состояние ESTABLISHED; Если клиент получает сегмент с флагом RST, то он прекращает попытки соединиться; Если клиент не получает ответа в течение 10 секунд, то он повторяет процесс соединения заново.
+    1. Клиент, который намеревается установить соединение, посылает серверу сегмент с номером последовательности и флагом `SYN`. Он является пакетом синхронизации. Устанавливается только в первом пакете хоста и сервера. Позволяет установить сеанс, делая возможным обеим сторонам согласовать порядковый номер для начала связи.
+       Дальнейший алгоритм: Сервер получает сегмент, запоминает номер последовательности и пытается создать сокет (буферы и управляющие структуры памяти) для обслуживания нового клиента;    
+       В случае успеха сервер посылает клиенту сегмент с номером последовательности и флагами SYN и ACK, и переходит в состояние SYN-RECEIVED;  
+       В случае неудачи сервер посылает клиенту сегмент с флагом RST.
+    2. Если клиент получает сегмент с флагом SYN, то он запоминает номер последовательности и посылает сегмент с флагом ACK. Дальнейший алгоритм: Если он одновременно получает и флаг ACK (что обычно и происходит), то он переходит в состояние ESTABLISHED; Если клиент получает сегмент с флагом RST, то он прекращает попытки соединиться; Если клиент не получает ответа в течение 10 секунд, то он повторяет процесс соединения заново.  
     3. Если сервер в состоянии SYN-RECEIVED получает сегмент с флагом ACK, то он переходит в состояние ESTABLISHED. В противном случае после тайм-аута он закрывает сокет и переходит в состояние CLOSED. Процесс называется «трёхэтапным рукопожатием» (англ. three way handshake), так как несмотря на то что возможен процесс установления соединения с использованием четырёх сегментов (SYN в сторону сервера, ACK в сторону клиента, SYN в сторону клиента, ACK в сторону сервера), на практике для экономии времени используется три сегмента.
 
 ---
@@ -3325,7 +3808,7 @@ https://github.com/pixelb/ps_mem
 
 - Ответы
     
-    Транспортный. Поскольку TCP является протоколом, 
+    Транспортный. Поскольку TCP является протоколом транспортного уровня.
     
 ---
 
@@ -3346,28 +3829,79 @@ https://github.com/pixelb/ps_mem
     
 ---
 
+
+### типы DNS записей, какие бывают
+
+- Ответ 
+
+    **A запись**: запись связывает доменное имя с ipv4 ip адресом.  
+    **AAAA запись**: запись связывает доменное имя с ipv6 ip адресом.  
+    **CNAME запись (Canonical Name)**: одно доменное имя может быть алиасом другого допустим `www.example.com` и `example.com` .  
+    **NS запись**: указывает имя сервера который обрабатывает информацию о домене.  
+    **MX запись**: определяет почтовые серверы, принимающие почту для домена. допустим `mail.example.com`.  
+    **TTL запись**: время жизни хранения записи. Представляет собой продолжительность кэширования записи *каждым звеном* цепочки установки соответствий DNS.    
+    **TXT запись**: поле с текстом. Часто через это поле проверяют право владения доменом (если можешь менять записи значит ты владелец).  
+    Используется для выпуска сертификатов. Также для SPF записей, DKIM ключа (для почтовых сервисов)  
+    **PTR запись:** обратная запись, которая позволяет связать IP адрес с доменом (эту запись может ставить ТОЛЬКО ВЛАДЕЛЕЦ IP АДРЕСА)  
+    **SOA запись:** начальная запись зоны, которая указывает, на каком сервере хранится эталонная информация о домене.  
+    Удалить эту запись нельзя. SOA-запись и ее значения не влияют на работу домена  
+
+---
+
+### Что такое адреса 127.0.0.0/8, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12? Зачем они нужны?  
+
+- Ответ
+    В rfc1918 указаны определенные префиксы\подсети, которые должны использоваться в приватных сетях. 
+    
+    https://datatracker.ietf.org/doc/html/rfc1918#:~:text=The%20Internet%20Assigned,192.168/16%20prefix)
+    ```
+       The Internet Assigned Numbers Authority (IANA) has reserved the  
+       following three blocks of the IP address space for private internets:  
+
+         10.0.0.0        -   10.255.255.255  (10/8 prefix)  
+         172.16.0.0      -   172.31.255.255  (172.16/12 prefix)  
+         192.168.0.0     -   192.168.255.255 (192.168/16 prefix)  
+    ```
+    Наши домашние роутеры, офисы и так далее. Публично они не маршрутизируемые, потому что провайдеры их фильтруют. Ну или по крайней мере стараются это делать.
+
+
+    Адрес 127.0.0.1 используется для того, чтобы устройство могло самому к себе обращаться, это так называемый loopback адрес.  
+
+    Случай аналогичный тому, что выше. В глобальной сети не используется. Описан в rfc5735
+    ```
+    127.0.0.0/8 – этот блок предназначен для использования в качестве loopback-адресов хостов Internet.  
+    Дейтаграмма, переданная протоколом вышележащего уровня по адресу из этого блока, не покинет этот хост (вернется ему же).  
+    Изначально этот процесс был реализован с использованием одного адреса 127.0.0.1/32.  
+    Как указано в [RFC1122] (параграф 3.2.1.3), адреса из блока 127.0.0.0/8 не могут легитимно появляться где-либо в сети.  
+    ```
+    https://datatracker.ietf.org/doc/html/rfc5735  
+    https://www.protokols.ru/WP/rfc5735/#:~:text=127.0.0.0/8%20%E2%80%93%20%D1%8D%D1%82%D0%BE%D1%82,%D0%BB%D0%B8%D0%B1%D0%BE%20%D0%B2%20%D1%81%D0%B5%D1%82%D0%B8.  
+
+---
+
 ### Как работает NAT, зачем он нужен?
 
 - Ответ
     
-    Изначально сети проектируются с использованием частных ip. 
+    #### Частные и публичные IP-адреса. NAT (Network Address Translation)
+
+    Изначально сети проектируются с использованием **частных IP-адресов**. Эти IP используются внутри площадки или организации для общения устройств в локальной сети. Однако, для того чтобы устройства могли взаимодействовать с внешними ресурсами за пределами локальной сети, их **частные IP-адреса** должны быть преобразованы в **публичные**.
     
-    Эти айпи используются внутри площадки и организации для общения устройств в локальной сети. 
+    #### NAT (Network Address Translation)
     
-    Однако, чтобы эти устройства могли бы стучаться наружу, приватный адрес должен быть переведен на общедоступный публичный адрес.
+    **NAT** — это технология, которая занимается переводом частных IP-адресов в общедоступные. **NAT** позволяет устройствам с частными адресами IPv4 обращаться к внешним ресурсам за пределами локальной сети. 
+    
+    Технология NAT полезна в контексте сохранения ограниченного количества общедоступных IPv4-адресов. Она позволяет многим устройствам в частной сети использовать один публичный IP-адрес для выхода в интернет.
     
     ---
     
-    И NAT занимается тем, что переводит приватные адреса в общедоступные. NAT (Network Address Translation). Собственно, технология так и расшифровывается.
-    Это позволяет устройству с частным адресом IPv4 обращаться к ресурсам за пределами его частной сети. NAT в сочетании с частными адресами IPv4 оказался полезным методом сохранения общедоступных IPv4-адресов.
-
-    ---
-
-    Еще один вариант ответа: 
-    На офис и дом выдается один глобальный адрес. Фаервол применяет технологию NAT. Она же masquerade. И в этом случае фаервол подменяет локальный айпи на свой глобальный.   
-    Помимо этогодобавляет к этому соединению случайный порт порт, чтобы запомнить и промониторить доходят ли пакеты от внешнего источника на локальный адрес пользователя. 
-    Эта запись вносится в таблицу. 
-    Удаление из таблицы нат происходит либо по таймауту(если это настроено), либо в случае когда виден пакет fin. То есть, когда фаервол видит пакет завершения fin.
+    #### Дополнительное объяснение NAT
+    
+    Часто на офис или дом выдается один глобальный IP-адрес. **Фаервол** применяет технологию NAT, которая также известна как **masquerade**. В этом случае фаервол подменяет локальные IP-адреса устройств на свой глобальный IP-адрес, добавляя к каждому соединению случайный порт. Это позволяет фаерволу отслеживать, возвращаются ли пакеты от внешнего источника на правильный локальный адрес внутри сети.
+    
+    Все подключения с публичным IP-адресом заносятся в **таблицу NAT**, где фаервол ведёт учёт текущих соединений. Записи в таблице NAT удаляются либо по таймауту, если это настроено, либо при получении специального пакета **FIN**, который сообщает о завершении соединения.
+    
+    Таким образом, NAT не только преобразует IP-адреса, но и помогает управлять соединениями, отслеживая их статус и обеспечивая корректную работу сетевых взаимодействий между внутренними и внешними ресурсами.
 
 
 ---    
@@ -3386,7 +3920,7 @@ https://github.com/pixelb/ps_mem
 
 - Ответ
 
-Протокол TLS (transport layer security) основан на протоколе SSL (Secure Sockets Layer), изначально разработанном в Netscape...
+    Протокол TLS (transport layer security) основан на протоколе SSL (Secure Sockets Layer), изначально разработанном в Netscape...
     
 
 
@@ -3408,15 +3942,58 @@ https://github.com/pixelb/ps_mem
     
 ---
 
-### днс использует только udp соединение
+### днс использует только udp соединение?
 
 - Ответ
 
-   Почти всегда, если дата пакет не помещаеться в один upd запрос, то днс устанавливает tcp соединение
+   Почти всегда, если дата пакет не помещаеться в один upd запрос, то днс устанавливает tcp соединение. Происходит это посредством отправки udp пакета с установленным флагом Truncation (TC), что говорит о том, что запрашиваемому нужно повторить запрос по TCP:
+   https://labs.apnic.net/index.php/2024/02/26/dns-and-truncation-in-udp/#:~:text=DNS%20transactions%20should%20use%20UDP,DNS%20response%20(Figure%201).  
+
+   В каких случаях может устанавливаться tcp соединение:  
+   * Трансфер зоны. В этом случае происходит синхронизация между DNS серверами, проходит большой объем данных. 
+   * Использование протокола DNS over TLS (DoT). Используется для шифрования DNS запросов. 
+
 
 ---
 
-### Как работает ICMP
+### На каком порту работает ping?   
+- **Ответ**  
+    **Краткий ответ** - ни на каком. Потому что предполагается что работает на сетевом уровне по ICMP, где портов нет.  
+
+    **Длинный ответ**:    
+    Вообще этот вопрос с подвохом.   
+    В первую очередь `ping` это какая-то программа. Которая может еще отличаться от поставщика к поставщику, от системы к системе.   
+    Что означает то, что и работать они могут по-разному.   
+
+    Мы предполагаем, что эта программа работает по протоколу ICMP, которая генерирует эти ICMP сообщения.   
+    Но это не значит, что оно так везде работает. Какого-то стандарта здесь нет.   
+
+
+    Сообщения ICMP оптравляются, и конечный хост дает какой-то ответ. Либо ответа не дает.  
+    Здесь мы можем сделать выводы о доступности, либо недоступности. Либо информацию о том, что маршрут закольцевался. Либо что-то еще.  
+    Те сообщения, которые были получены на этом уровне - не предшествует непосредственной отправке данных куда-либо.   
+
+
+    Помимо этого icmp может использоваться при проверке **достижимости** порта. Это тоже ICMP сообщение.    
+    Например сообщение Destination Port Unreachable(тип 3 код 3):    
+    ```
+    PING 192.168.2.4 (192.168.2.4) 56(84) bytes of data.  
+    From 192.168.1.15 icmp_seq=1 Destination Port Unreachable  
+    ```
+
+    Вроде бы портов в icmp нет, как так?    
+    Во-первых с 70ых-80ых в целом понятие портов менялось, и могли иметься в виду другие понятия.  
+    Например, в ip якобы есть порты, хотя это могут быть цифры для того, чтоб понимать что это за протокол.  
+
+    Все дело в том, что уровни так же могут между собой взаимодействовать.  
+    При отправке udp запроса на закрытый порт на удаленном хосте - мы можем получить сгенерированное сообщение о недоступности порта.  
+    Которое генерирует конечная операционная система. Но, такие сообщения генерируются не всегда. И пакеты могут отбрасываться без уведомления.   
+
+    То есть ICMP это такой механизм обратной связи, который позволяет сообщать о проблемах на различных уровнях сетевого стэка.  
+
+---
+
+### Как работает ICMP  
 
 - **Ответ**
     Internet Control Message Protocol. Протокол межсетевых управляющих сообщений. Протокол IP предоставляет сервис передачи данных без гарантии доставки.
@@ -3455,6 +4032,58 @@ https://github.com/pixelb/ps_mem
     - Запрос ответ доступности сети (0 и 8) - доступность узлов
     - Запрос и ответ отметки времени (13 и 14) - проверка быстродействия сети
 
+
+---
+
+### Что такое TTL?  
+- Ответ  
+    #### Time To Live (TTL)
+
+    **Time To Live (TTL)** — это метод, который используется для ограничения времени жизни данных в сети. В контексте IP-пакетов TTL представляет собой счётчик, который уменьшается на единицу при каждом прохождении пакета через узел (хоп) на маршруте.
+    
+    Когда значение **TTL** становится равным нулю, пакет уничтожается.
+    
+    #### Почему был введён TTL?
+    
+    TTL был введён для предотвращения ситуации, когда IP-пакет мог бы "бесконечно" путешествовать по сети, если не было бы возможности его уничтожить. В стандартном протоколе IP изначально не было ограничения на время жизни пакета, что могло приводить к тому, что пакеты застревали бы в петле маршрутизации, что негативно влияло бы на работу сети.
+    
+    TTL решает эту проблему, гарантируя, что пакеты будут удалены, если они не смогут достичь своей конечной точки за ограниченное количество хопов.
+
+---
+
+
+### Как работает traceroute?  
+ 
+- Ответ  
+  В первую очередь это тоже утилита, как и пинг. И основываться может либо на ICMP, либо на UDP, и даже на TCP.   
+  Нужна для того, чтобы определить маршруты следования данных по сети.     
+  В отличие от ping, который лишь сообщает о проблеме, помогает точнее определить где возникла проблема.    
+  В целом это второй инструмент, который помогает сузить круг поиска возможных проблем при сетевой недоступности.
+
+  **Как работает?**
+  * На вход даётся конечный адрес назначения (destination, dst).   
+  * Программа генерирует серию сообщений, начиная с **TTL** = 1.    
+  * Каждый маршрутизатор на пути уменьшает **TTL** на 1.   
+  * Когда **TTL** достигает 0, маршрутизатор отбрасывает пакет и отправляет ICMP "Time Exceeded" обратно.   
+  * Traceroute фиксирует этот ответ и IP-адрес отправителя.    
+  * Процесс повторяется с увеличением **TTL** на 1, пока не достигнет конечного адреса. Либо пока не кончатся переходы (самое большое число 255). То есть в данном случае TTL будет 2. Первый запрос попадет на наш первый маршрутизатор. TTL уменьшится на 1. И маршрутизатор отправит запрос на следующий маршрутизатор. После чего TTL будет 0 и пакет отбросится.  
+  * Если используется UDP, на закрытый порт конечного хоста придёт ICMP "Port Unreachable".    
+
+  Что позволяет найти, какие ошибки?   
+  * Полный путь, который проходит пакет   
+  * Увидеть имена, адреса маршрутов и\или иных устройств на пути следования пакетов  
+  * Сетевые задержки, сколько времени нужно для отправки и получения данных всем устройствам  
+
+
+  Минусы:  
+  Это занимает много времени как правило  
+  Тут может быть нюанс, что маршрутизаторы могут не давать ответа, не отвечать на UDP\TCP\ICMP-echo запросы.  
+  И пробовать нужно будет разные варианты. И в целом это лишь один из инструментов диагностики.      
+
+  https://youtu.be/HgYuBN0ZYu0
+
+  https://predzimye.livejournal.com/16179.html  
+
 ---
 
 ### Что такое authority в DNS?
@@ -3471,6 +4100,15 @@ https://github.com/pixelb/ps_mem
     - **Не будет отвечать на рекурсивные запросы.** Серверы с только авторитативной функцией по своему понятию не предназначены отвечать на них. Это делает его только сервером, а не клиентом в системе DNS. Любой запрос, достигающий Authoritative-Only сервера, обычно поступает от распознавателя (резолвера), получившего ссылку на него, а это означает, что Authoritative-Only сервер либо имеет полный ответ, либо сможет передать новую ссылку на сервер имён, которому была делегирована соответствующая ответственность.
     - **Не кеширует результаты запроса.** Поскольку сервер authoritative-only никогда не запрашивает информацию на других серверах для обработки запроса, то ему просто нечего кэшировать. Вся информация, которую он знает, уже находится в его системе.
     
+---
+
+
+### Как узнать мой внешний ip адрес?
+- Ответ
+  Проще всего это выяснить, сделав запрос на сервисы по типу 2ip.ru, и им подобных.
+  `$ curl 2ip.ru`  
+  Там будет сразу выведен адрес.
+
 ---
 
 ### Что такое рекурсивный DNS
@@ -3507,27 +4145,45 @@ https://github.com/pixelb/ps_mem
 
 - Ответ
     
-    HTTP имеет функцию базовой аутентификации. Это протокол, который описан в стандартах http 1.0/1.1
+    HTTP имеет функцию базовой аутентификации. Это протокол, который описан в стандартах HTTP 1.0/1.1 
     
     Принцип работы:
     
-    1. При обращении неавторизованного пользователя к защищенному ресурсу сервер вернет 401 unauthorized и добавляет заголовок `www-authenticate`
-    2. Браузер при получении ответа с заголовком `www-authenticate` выкинет форму логина и пароля. И в дальнейшем При обращении к данному ресурсу передастся заголовок Auhtorization.
+    1. Первоначальный запрос
+       * Клиент делает запрос к защищенному ресурсу без учетных данных
+       * Сервер отвечает ответом `401 Unauthorized`
+       * Сервер добавляет заголовок `WWW-Authenticate: Basic realm="Name of the realm"`
+    2. Ответ клиента
+       * Браузер показывает встроенную форму для ввода логина и пароля
+       * Формируется новый запрос с заголовком `Authorization`
+       * Учетные данные кодируются (не шифруются) в формате `base64(username:password)`
     
-    Есть несколько схем
+    Есть несколько схем аутентификации
     
-    Basic
+    **Basic**. Она самая простая. И там данные передаются в формате **base64(username:password)**. Что небезопасно без использования https. Данные передаются в закодированном, но не в зашифрованном виде.  
     
-    Digest
-    
-    В случае с basic - передаются в незашифрованном виде.
-    
-    И тут в auth передается в base64
+    **Digest** Является более безопасной альтернативой Basic. Использует алгоритм MD5 для хеширования. И имеет дополнительные поля.
     
 ---
-    
 
-### Как работают сертификаты? Как подтверждается соединение?
+### В чём отличие аутентификации от авторизации?   
+   - Ответ
+
+    **Аутентификация** пытается ответить на вопрос "Кто ты?"
+    Подтверждает личность пользователя, и проверяет, что пользователь действительно тот, за кого он себя выдает.
+
+    Авторизация пытается ответить на вопрос "Что тебе можно?"   
+    То есть проверяет права доступа, и определяет что можно смотреть, изменять, комментировать и тд аутентифицированному пользователю.  
+
+    Пример:  
+    При вводе логина и пароля на форме сайта - проходим авторизацию на сайте.  
+    Пытаясь зайти на определенную страницу происходит авторизация, которая позволит или не позволит посмотреть её содержимое.   
+
+
+---
+
+
+### Как работают сертификаты? Как подтверждается соединение? (https соединение)
 
 - Ответ
     
@@ -3656,6 +4312,43 @@ https://github.com/pixelb/ps_mem
 
 ---
 
+### Динамическая маршрутизация и разные протоколы динамической маршрутизации, ebgp ibgp, константы bgp. На чём сейчас принято строить bgp-пиринги. Что такое blackhole.
+
+- Ответ 
+
+   **Основные протоколы динамической маршрутизации:**
+    1. **RIP (Routing Information Protocol)** - один из старейших протоколов, использует алгоритм расстояния-вектора.
+    2. **OSPF (Open Shortest Path First)** - протокол маршрутизации внутри автономной системы, использует алгоритм состояния канала.
+    3. **EIGRP (Enhanced Interior Gateway Routing Protocol)** - протокол Cisco, сочетает в себе лучшие черты RIP и OSPF.
+    4. **BGP (Border Gateway Protocol)** - протокол междоменной маршрутизации, используется для маршрутизации между различными автономными системами.
+
+
+    #### eBGP и iBGP
+
+    **eBGP (External BGP)** и **iBGP (Internal BGP)** являются двумя вариантами протокола BGP:
+
+    - **eBGP** используется для маршрутизации между различными автономными системами (AS). Обычно eBGP требует, чтобы маршрутизаторы были непосредственно соединены.
+    - **iBGP** используется внутри одной автономной системы. Маршрутизаторы, использующие iBGP, могут быть соединены через другие маршрутизаторы, не участвующие в BGP.
+
+    #### Константы BGP
+
+    Константы BGP включают различные атрибуты и параметры, которые используются для выбора наилучшего пути. Некоторые из ключевых атрибутов:
+
+    - **AS_PATH** - список AS, через которые проходит маршрут.
+    - **NEXT_HOP** - следующий переходный узел, к которому должен обратиться маршрутизатор для достижения целевой сети.
+    - **LOCAL_PREF** - предпочтение маршрута внутри AS; чем выше значение, тем предпочтительнее маршрут.
+    - **MED (Multi-Exit Discriminator)** - атрибут, используемый для влияния на выбор входящего маршрута соседним AS.
+
+    #### Построение BGP-пирингов
+
+    Современные BGP-пиринги часто строятся на основе сетевых устройств, способных обрабатывать большие объемы маршрутизационной информации и поддерживать высокую производительность. Используются как физические, так и виртуальные маршрутизаторы. Важным аспектом является настройка безопасности пиринга, включая аутентификацию и фильтрацию маршрутов.
+
+    #### Blackhole
+
+    **Blackhole** в сетевых терминах — это механизм, используемый для преднамеренного "поглощения" трафика, который по какой-либо причине считается нежелательным или вредоносным. Трафик, направленный в blackhole, обычно отбрасывается, что помогает защитить сеть от DDoS-атак или избавиться от трафика к недоступным сервисам. 
+
+---
+
 ### Расскажи про модель TCP IP 
 
 - Ответ
@@ -3680,6 +4373,24 @@ https://github.com/pixelb/ps_mem
        В первую очередь этот уровень предоставляет инструменты для взаимодействия пользовательских приложений с сетью. Все делается так, чтобы данные доходили в понятном пользователю или софту виде.
        SSH функционирует на этом слое, предоставляя защищенный канал для удаленной сессии или туннелирования других сетевых протоколов.
 
+
+---
+
+### Чем отличаются балансировщики L4 и L7? Что умеет балансировщик L7, чего не умеет L4?  
+- Ответ  
+    L7 работает на прикладном уровне. И принимает решения основываясь на данных этого уровня. Например:  
+    * URL пути  
+    * HTTP заголовки  
+    * Куки  
+    * Тип контента (content-type)  
+    * HTTP методы (GET,POST,PUT и т.д.)  
+   
+    L4 работает на траспортном уровне, и взаимодействует с:  
+    * IP-адресами  
+    * Портами  
+    * Протоколами TCP\UDP  
+
+    Если подытожить - L7 работает непосредственно с самими данными. L4 для работы с сетевыми параметрами, без анализа содержимого самих пакетов.
 
 ---
 
@@ -3821,9 +4532,7 @@ https://github.com/pixelb/ps_mem
     
     Таким образом, сценарии, написанные с учетом идемпотентности, реализуют ту самую декларативность в описании состояния инфраструктуры, а инфраструктура соответствует состоянию, описанному в коде нашего скрипта.
     
-    Это и есть
-    
-    **Iac - Infrastructure as Code - инфраструктура как код**
+    Это и есть **IaС - Infrastructure as Code - инфраструктура как код**
     
 ---
 
@@ -3882,7 +4591,7 @@ https://github.com/pixelb/ps_mem
 - Ответы
     
     **Инвентарь (Inventory)**
-     - cписок хостов, может быть статичным в виде текcтового файла в формате ini или динамическим в виде скрипта или плагина, который подгружает структуру данных из стороннего источника, например, Openstack API или база LDAP.
+     - cписок хостов, может быть статичным в виде текcтового файла в формате `.ini` или динамическим в виде скрипта или плагина, который подгружает структуру данных из стороннего источника, например, Openstack API или база LDAP.
     
     ```
     $ cat hosts
@@ -3919,9 +4628,9 @@ https://github.com/pixelb/ps_mem
     
     Данный пример аналогичен команде `apt install nginx`
     
-    **Сценарий (Play)**или **Плейбук (Playbook)**
+    **Сценарий (Play)** или **Плейбук (Playbook)**
     
-    - сценарий или скрипт, содержащий одну или несколько заданий на выполнение, например:
+    - сценарий или скрипт, содержащий одно или несколько заданий на выполнение, например:
     
     ```yaml
     $ cat prod-playbook.yml
@@ -3936,7 +4645,7 @@ https://github.com/pixelb/ps_mem
     
     **Роль (Role)**
     
-    - более сложная абстракция, выглядит как структура директорий и файлов, которые описывают набор дефолтных переменных, зависимостей от других ролей, может содердать содержит файлы, темплейтов и задания.
+    - более сложная абстракция, выглядит как структура директорий и файлов, которые описывают набор дефолтных переменных, зависимостей от других ролей, может содержать файлы и темплейты, содержит задания(Tasks).
     
     **Факты (Facts)**
     
@@ -3950,7 +4659,7 @@ https://github.com/pixelb/ps_mem
 
 - Ответ
     
-    Модули что-то делают на хостах
+    Модули что-то делают на хостах. Модули вызываются в задачах (tasks) плейбука
     
     Плагины расширяют функционал ансибла
     
@@ -3994,40 +4703,40 @@ https://github.com/pixelb/ps_mem
     
 - Другой ответ, более полный
     
-    1) Накладные затраты при записи данных
+  1) **Накладные затраты при записи данных**
+      
+      Очевидно, что для поддержаиня какой-либо дополнительной структуры данных, либо определенной организации данных, требуется совершать дополнительные действия.
+      
+      Действий не так много, накладные затраты на них небольшие. Но плохо то, что эти затраты и действия возникают при записи данных. А запись данных происходит в транзакции.
+      
+      Хуже если в транзакции происходит и запись и чтение данных (контроль остатков). В этом случае индекс должен быть всегда в актуальном состоянии.
+      
+      Затраты на запись или чтение в транзакции намного "дороже" внетранзакционных издержек. Дело в том, что запись может вестись строго последовательно, и время на фиксацию изменений в БД сократить достаточно сложно. Более мощное оборудование тут не всегда помогает.
+      
+      Внетранзакционное же чтение данных может вполне успешно выполняться параллельно, при этом в случае увеления количества запросов на чтение данных, к примеру, вследствие роста количества пользователей, то они вполне могут решиться наращиванием аппаратных ресурсов.
     
-    Очевидно, что для поддержаиня какой-либо дополнительной структуры данных, либо определенной организации данных, требуется совершать дополнительные действия.
-    
-    Действий не так много, накладные затраты на них небольшие. Но плохо то, что эти затраты и действия возникают при записи данных. А запись данных происходит в транзакции.
-    
-    Хуже если в транзакции происходит и запись и чтение данных (контроль остатков). В этом случае индекс должен быть всегда в актуальном состоянии.
-    
-    Затраты на запись или чтение в транзакции намного "дороже" внетранзакционных издержек. Дело в том, что запись может вестись строго последовательно, и время на фиксацию изменений в БД сократить достаточно сложно. Более мощное оборудование тут не всегда помогает.
-    
-    Внетранзакционное же чтение данных может вполне успешно выполняться параллельно, при этом в случае увеления количества запросов на чтение данных, к примеру, вследствие роста количества пользователей, то они вполне могут решиться наращиванием аппаратных ресурсов.
-    
-    2) Накладные затраты на обслуживание индексов
-    
-    При интенсивной записи данных в таблицу данные индексов к ней не всегда распологаются на той странице, на которой должны. Появляются "пропуски", физическая структура индексов становится неэффективной. Поэтому иногда бывает необходимо производить дефрагментацию индексов. Производительность запросов к СУБД во время дефрагментации, соответственно, падает. Есть ещё процесс полного перестроения индексов - но в современных версиях MS SQL необходимости выполнения данной операции по регламенту нет.
-    
-    3) Влияние индексов на размер базы
-    
-    Не самое страшное последствие, но так или иначе если база весит 150-200 ГБ, то об этом надо уже задуматься. Для средней OLTP базы размер индексов, как правило, превышает объём самой базы.
-    
-    Не верите? Вполне можете воспользоваться какой-либо обработкой вроде этой:
-    
-    [//infostart.ru/public/19463/](https://infostart.ru/public/19463/)
-    
-    и посмотреть, сколько же в вашей базе места занимают индексы.
-    
-    4) Затраты на создание и поддержание актуальной статистики
-    
-    Статистику в базе нужно регулярно обновлять при интенсивных операциях вставки и обновления. Это занимает вычислительные ресурсы, хоть и не влияет непосредственно на процесс. Рекомендовано и в некоторых БД реализуется автоматически обновление статистики ночью, в период офф-пика, когда executor nodes нельзя полностью гасить, но можно занять их несрочной работой.
-    
-    Неактуальная статистика может привести к проблемам производительности системы.
-    
-    Но это не значит, что индексы - это плохо, без них СУБД были бы бесполезны.
-    
+  2) **Накладные затраты на обслуживание индексов**
+      
+      При интенсивной записи данных в таблицу данные индексов к ней не всегда распологаются на той странице, на которой должны. Появляются "пропуски", физическая структура индексов становится неэффективной. Поэтому иногда бывает необходимо производить дефрагментацию индексов. Производительность запросов к СУБД во время дефрагментации, соответственно, падает. Есть ещё процесс полного перестроения индексов - но в современных версиях MS SQL необходимости выполнения данной операции по регламенту нет.
+      
+  3) **Влияние индексов на размер базы**
+      
+      Не самое страшное последствие, но так или иначе если база весит 150-200 ГБ, то об этом надо уже задуматься. Для средней OLTP базы размер индексов, как правило, превышает объём самой базы.
+      
+      Не верите? Вполне можете воспользоваться какой-либо обработкой вроде этой:
+      
+      [//infostart.ru/public/19463/](https://infostart.ru/public/19463/)
+      
+      и посмотреть, сколько же в вашей базе места занимают индексы.
+      
+  4) **Затраты на создание и поддержание актуальной статистики**
+      
+      Статистику в базе нужно регулярно обновлять при интенсивных операциях вставки и обновления. Это занимает вычислительные ресурсы, хоть и не влияет непосредственно на процесс. Рекомендовано и в некоторых БД реализуется автоматически обновление статистики ночью, в период офф-пика, когда executor nodes нельзя полностью гасить, но можно занять их несрочной работой.
+      
+      Неактуальная статистика может привести к проблемам производительности системы.
+      
+      Но это не значит, что индексы - это плохо, без них СУБД были бы бесполезны.
+      
     **Плохи индексы, которые не используются.**
 
 ---
@@ -4038,43 +4747,41 @@ https://github.com/pixelb/ps_mem
     
     Необходимы 2 сервера: master и slave.
     
-    1. На обеих сервера устанавливаем сервер MySQL одинаковой версии.
-    2. Включаем сервер базы данных на обеих серверах.
-    3. Настраиваем master - в `/etc/my.cnf` устанавливаем слеюущие значения:
-    
-    ```
+    1. На оба сервера устанавливаем сервер MySQL одинаковой версии.
+    2. Включаем сервер базы данных на обоих серверах.
+    3. Настраиваем **master** - в `/etc/my.cnf` устанавливаем следующие значения:  
+    ```bash
     # выбираем ID сервера, произвольное число, лучше начинать с 1
     server-id = 1
+
     # путь к бинарному логу
     log_bin = /var/log/mysql/mysql-bin.log
+
     # название Вашей базы данных, которая будет реплицироваться
     binlog_do_db = newdatabase
     ```
-    
-    Перезапускаем сервер базы данных. 4. Подключаемся к master серверу, создаем пользователя и назначаем ему права для выполнения репликации.
-    
-    ```
+    Перезапускаем сервер базы данных.  
+
+    4. Подключаемся к **master** серверу, создаем пользователя и назначаем ему права для выполнения репликации.  
+    ```bash
     mysql -u root -p <пароль root сервера БД>
     GRANT REPLICATION SLAVE ON *.* TO 'slave_user'@'%' IDENTIFIED BY 'password';
     FLUSH PRIVILEGES;
     ```
     
-    1. На master сервере делаем дамп базы данных c блокировкой таблиц.
-    
-    ```
+    5. На master сервере делаем дамп базы данных c блокировкой таблиц.  
+    ```bash
     mysqldump -u root -p --lock-all-tables newdatabase > newdatabase.sql
     ```
     
-    1. Переносим дамп базы на slave сервер, создаем базу данных с таким же именем и импортируем базу.
-    
-    ```
+    6. Переносим дамп базы на slave сервер, создаем базу данных с таким же именем и импортируем базу. 
+    ```bash
     CREATE DATABASE newdatabase;
     mysql -u root -p newdatabase < newdatabase.sql
     ```
     
-    1. Настраиваем slave в `/etc/my.cnf`:
-    
-    ```
+    7. Настраиваем slave в `/etc/my.cnf`:  
+    ```bash
     # ID Слейва, удобно выбирать следующим числом после Мастера
     server-id = 2
     # Путь к relay логу
@@ -4084,31 +4791,37 @@ https://github.com/pixelb/ps_mem
     # База данных для репликации
     binlog_do_db = newdatabase
     ```
+    Перезапускаем сервер базы данных.  
     
-    Перезапускаем сервер базы данных. 8. Запускаем репликацию на slave сервере.
-    
-    ```
+    8. Запускаем репликацию на slave сервере.  
+    ```bash
     CHANGE MASTER TO MASTER_HOST='10.10.0.1', MASTER_USER='slave_user', MASTER_PASSWORD='password',
     MASTER_LOG_FILE = 'mysql-bin.000001', MASTER_LOG_POS = 107;
-    ##Указанные значения мы берем из настроек Мастера
+    # Указанные значения мы берем из настроек Мастера
     После этого запускаем репликацию на Слейве:
     START SLAVE;
     ```
     
-    1. Проверяем статус репликации:
-    
-    ```
+    9. Проверяем статус репликации:  
+    ```bash
     SHOW SLAVE STATUSG
     ```
     
 ---
 
-### В чем разница между truncate delete  и drop?
+### В чем разница между TRUNCATE DELETE и DROP?
 
-- Ответ
-    1. Оператор DROP используется для удаления структуры таблицы. После удаления индексы, ограничения и триггеры, зависящие от таблицы, также будут удалены, но функции и хранимые процедуры, которые зависят от таблицы, останутся, но станут недействительными.
-    2. Оператор DELETE используется для удаления данных в таблице, его можно удалить с помощью условий, и все данные в таблице удаляются без условий.
-    3. Оператор TRUNCATE используется для удаления всех данных в таблице.
+- Ответ  
+    Тут важно понимать что от базы к базе поведение данных операций может отличаться.  
+    1. Оператор `DROP` используется для удаления **структуры** таблицы. После удаления индексы, ограничения и триггеры, зависящие от таблицы, также будут удалены, но функции и хранимые процедуры, которые зависят от таблицы, останутся, но станут недействительными. Операция необратимая. Это операция **DDL** (Data Definition Language). Бытовая аналогия - снести целый дом.  
+    2. Оператор `DELETE` используется для удаления **данных** в таблице, его можно удалить с помощью условий, и все данные в таблице удаляются без условий. Операция откатываемая. Дольше работает, поскольку информация для отката записывается. Блокирует только удаляемые строки, а не всю таблицу. Это операция **DML** (Data Manipulation Language).  Бытовая аналогия - выбросить какие-то отдельные вещи из дома.   
+    3. Оператор `TRUNCATE` используется для удаления всех данных в таблице.  Операция быстрая и эффективная, ибо **не хранит подробную операцию для отмены**. Необратимая операция. На время работы блокирует таблицу. Это также операция **DDL**.  Бытовая аналогия - выбросить содержимое дома, но оставить сам дом.   
+
+    * **DDL** (Data Definition Language) - язык определения данных. Операции изменяют структуру базы данных (CREATE,ALTER,DROP,TRUNCATE)  
+    * **DML** (Data Manipulation Language) - язык манипулирования данными. То есть работают с содержимым таблиц (SELECT,INSERT,UPDATE,DELETE)  
+
+    Основное отличие в том, что **DDL** работают со структурой базы данных и обычно необратимы.  
+    А **DML** операции работают с данными внутри таблиц и могут быть отменены до подтверждения транзакции.  
 
 ---
 
@@ -4116,74 +4829,165 @@ https://github.com/pixelb/ps_mem
 
 - Ответ
     
-    PostgreSQL использует концепцию ролей (*roles*) для управления разрешениями на доступ к базе данных. 
+    **PostgreSQL** использует концепцию ролей (*roles*) для управления разрешениями на доступ к базе данных. 
     
     Роль можно рассматривать как пользователя базы данных или как группу пользователей, в зависимости от того как роль настроена.
     
-     Роли могут владеть объектами базы данных (например, таблицами) и выдавать другим ролям разрешения на доступ к этим объектам, управляя тем, кто имеет доступ и к каким объектам.
+    Роли могут владеть объектами базы данных (например, таблицами) и выдавать другим ролям разрешения на доступ к этим объектам, управляя тем, кто имеет доступ и к каким объектам.
     
-     Кроме того, можно предоставить одной роли *членство* в другой роли, таким образом одна роль может использовать привилегии других ролей.
+    Кроме того, можно предоставить одной роли *членство* в другой роли, таким образом одна роль может использовать привилегии других ролей.
     
     Концепция ролей включает в себя концепцию пользователей ("users") и групп ("groups"). До версии 8.1 в PostgreSQL пользователи и группы были отдельными сущностями, но теперь есть только роли. Любая роль может использоваться в качестве пользователя, группы, и того и другого.
     
 ---
 
-### Почему не следует использовать утилиту mysqldump на большой активной базе данных? Какие Вы знаете альтернативы? 
+### Почему не следует использовать утилиту mysqldump на большой активной базе данных? Какие Вы знаете альтернативы?  
+
+- Ответ
+  
+    Потому что может произойти блокировка таблиц. И любые изменения данных будут ожидать полного окончания дампа.  
+    Из-за этого приложение фактически перестает работать.  
+    Поэтому во время снятия дампа  нужно отключить блокировку таблиц.  
+
+Можно использовать ключ `--single-transaction`, который позволит прочитать базу, и потом уже делать дамп. Это создаст корректный дамп.  
+`--skip-lock-tables` - помогает в случаях когда у нас есть движок MYIASAM. И это позволяет избежать несогласованности данных.  
+
+---
+
+### Аббревиатура ACID, как расшифровывается?
 
 - Ответ
 
-Потому что может произойти блокировка таблиц. И любые изменения данных будут ожидать полного окончания дампа.
-Из-за этого приложение фактически перестает работать.
-Поэтому во время снятия дампа  нужно отключить блокировку таблиц.
+    - **Atomicity** (Атомарность) - говорит что каждая транзакция является неделимой единицей работы, 
+    и либо выполняется полностью, либо не выполняется вовсе.  
+    - **Consistency** (Согласованность) - обеспечивает, что транзакция переводит базу данных из одного согласованного состояния в другое согласованное состояние. То есть, из одного валидного состояния в другое.  
+    Допустим, есть правило что баланс счета не должен быть минусовой, Consistency гарантирует, что после транзакции ни один из балансов не будет минусовой
+    - **Isolation** (Изоляция) - каждая транзакция должна выполняться изолированно от других транзакций.  
+    Допустим две транзакции не могут одновременно работать с одними данными в один момент времени.
+    - **Durability** (Долговечность) - после того как транзакция была успешно завершена, изменения должны остаться в базе данных, даже если что-то отъебнет.  
+    
+---
 
-Можно использовать ключ `--single-transaction`, который позволит прочитать базу, и потом уже делать дамп. Это создаст корректный дамп.
-`--skip-lock-tables` - помогает в случаях когда у нас есть движок MYIASAM. И это позволяет избежать несогласованности данных.
+### Как безопасно удалить или изменить миллион строк в базе данных?  
+- Ответ  
+  
+  Если просто в лоб удалять таблицу через DELETE, то мы можем столкнуться с блокировками таблицы. То есть таблица какое-то время будет недоступна.   
+  Также можно столкнуться с повышенной нагрузкой на систему, что также замедлит общую производительность запросов.  
+  1. Создать временную таблицу, с той же структурой, что и у текущей таблицы. Скопировать туда нужные данные. Потом переименовать таблицы. И удалить старую ненужную. В некоторых случаях это быстрее.  
+  2. Порционное удаление. То есть мы разбиваем удаление по частям, например по 1000 записей. Можно оставить задержку между удалением. (Нужно это делать в транзакции).  
+  3. Нужно найти время, когда нагрузка на базу минимальная. Как правило, это ночное время.  
+  4. На всякий случай создать резервную копию базы.  
+
+---
+
+### Что такое wal-файл и зачем он нужен?  
+- Ответ  
+  WAL (Write-Ahead Logging) - механизм журналирования в PostgreSQL который записывает все изменения данных перед тем, как они попадут на диск.       
+  По сути это страховка для базы данных, помогающая не потерять данные, если что-то пойдет не так.    
+
+  Задачи:    
+  1. Обеспечение целостности и надежности данных  
+    * В случае сбоя системы или краха данных  
+    * При внезапном отключении питания  
+    * При аппаратных проблемах  
+  
+  2. Репликация  
+    * Wal используется для синхронизации реплик  
+    * Обеспечивает последовательное применение изменений  
+
+  3. Оптимизация производительности  
+    * Изменения сначала записываются в wal файл (быстрая последовательная запись)  
+    * После чего происходит асинхронное обновление основных файлов базы (медленные случайные операции I/O)  
+  
+  4. Point-in-time-recovery   
+    * Позволяет восстановить базу данных на любой момент времени  
+    * Помогает при случайном удалении или повреждении данных  
+    * Позволяет откатиться к определенной точке  
 
 ---
 
 ## Python
 
-### Что такое хеш таблица?
+### Хеш-таблица
 
 - Ответ
+    #### Что такое хеш-таблица?
+    **Хеш-таблицы** — это структура данных, где адрес или индекс элемента генерируется с помощью **хеш-функции**. Это позволяет ускорить доступ к данным, так как значение индекса используется как ключ для поиска соответствующего значения. В хеш-таблице хранятся пары **ключ-значение**, где ключ создаётся при помощи функции хеширования.
     
-    Хеш-таблицы — это тип структуры данных, в которой адрес или значение индекса элемента данных генерируются из хеш-функции. 
+    Хеш-таблицы широко используются в программировании для быстрого поиска, добавления и удаления данных.
     
-    Это ускоряет доступ к данным, поскольку значение индекса ведет себя как ключ к значению данных. Другими словами, в хэш-таблице хранятся пары ключ-значение, но ключ генерируется с помощью функции хеширования.
-    По этому принципу, например, работают чит коды в GTA San Andreas. То, что мы знаем как читкоды - это не те слова, которые изначально закладывались разработчиками.
+    #### Пример использования хеш-таблиц
     
+    Одним из примеров использования хеш-таблиц являются **чит-коды** в играх, таких как **GTA San Andreas**. Те слова, которые игроки вводят в виде чит-кодов, на самом деле не являются изначально задуманными командами разработчиков. Эти слова проходят через хеш-функцию, которая преобразует их в ключи, связанные с конкретными командами в игре.
+    
+    Таким образом, хеш-таблицы позволяют обрабатывать чит-коды, сопоставляя введённые символы с заранее заданными значениями в игре, что значительно упрощает работу с большим количеством данных.
+
 ---
 
 ### Что такое генератор, что такое итератор?
 
 - Ответ
+
+    #### Итератор
     
-    **Итератор** - это сущность, которая позволяет упростить навигацию по некой коллекции.
+    **Итератор** — это сущность, которая упрощает навигацию по коллекции данных. С помощью итератора можно перебрать значения в списке, применяя к каждому элементу определённую функцию. Итераторы позволяют последовательно получать элементы из коллекций, таких как списки, кортежи или множества.
     
-    Например, с помощью него можно перебрать значения в списке, применяя функцию к каждому элементу. 
+    #### Генератор
     
-    **Генератор** позволяет генерировать эти списки. Однако, это на первый взгляд. Потому что генератор сам по себе объект, и отличается он от списков селедующим:
+    **Генератор** — это объект, который генерирует значения по мере их запроса. Генераторы похожи на списки, но отличаются следующими особенностями:
     
-    - Генератор — это объект, который сразу при создании не вычисляет значения всех своих элементов.
-    - Он хранит в памяти только последний вычисленный элемент, правило перехода к следующему и условие, при котором выполнение прерывается.
-    - Вычисление следующего значения происходит лишь при выполнении метода . Предыдущее значение при этом теряется.
-        
-        next()
-        
-        Тут есть пример использования 
-        
-        [https://skillbox.ru/media/code/generatory_python_chto_eto_takoe_i_zachem_oni_nuzhny/](https://skillbox.ru/media/code/generatory_python_chto_eto_takoe_i_zachem_oni_nuzhny/)
+    - Генератор не вычисляет все значения сразу при создании. Значения генерируются по мере необходимости.
+      - В памяти хранится только последнее вычисленное значение, а также правило перехода к следующему элементу и условие остановки генерации.
+      - Вычисление следующего значения происходит при вызове метода `next()`. Предыдущее значение при этом теряется.
+    
+    Пример использования генератора и дополнительную информацию можно найти по ссылке:  
+    [Генераторы в Python: что это такое и зачем они нужны](https://skillbox.ru/media/code/generatory_python_chto_eto_takoe_i_zachem_oni_nuzhny/)
 
 ---        
 
 ### В чем разница между кортежем и списком?
 
 - Ответ
-    1. Список можно изменить после создания.
-    2. Кортеж нельзя изменить после создания.
-    3. Список упорядочен. Он представляет собой упорядоченные последовательности объектов, как правило, одного и того же типа. Например, все имена пользователей упорядочены по дате создания: [«Seth», «Ema», «Eli»].
-    4. У кортежа есть структура. В каждом индексе могут сосуществовать различные типы данных. Например, такая запись базы данных в памяти: (2, «Ema», «2020–04–16») # id, name, created_at*.*
+  1. **Изменяемость (Mutable vs Immutable)**:
+   - **Список** можно изменять после создания. Элементы можно добавлять, удалять или изменять.
+   - **Кортеж** является неизменяемым объектом. После создания кортежа его содержимое нельзя изменить.
 
+  2. **Производительность**:
+    - **Кортеж** работает быстрее, чем список, при итерации и доступе к элементам, так как из-за своей неизменяемости он оптимизирован лучше. Это делает его предпочтительным выбором для данных, которые не изменяются.
+    - **Список** медленнее, так как его структура предусматривает возможность модификации данных.
+
+  3. **Использование памяти**:
+    - **Кортежи** занимают меньше памяти по сравнению со списками за счёт своей неизменяемости.
+    - **Списки** требуют больше памяти, так как резервируют пространство для возможных изменений.
+
+  4. **Функциональность**:
+    - **Списки** поддерживают множество методов, таких как `append()`, `remove()`, `extend()`, и другие, позволяющие изменять его содержимое.
+    - **Кортежи** не поддерживают методы изменения, так как они неизменяемы, но могут быть использованы методы, такие как `count()` и `index()`.
+
+  5. **Использование**:
+    - **Список** используется, когда данные могут изменяться, например, список задач, товаров или пользователей.
+    - **Кортеж** обычно используется для хранения данных, которые не должны изменяться, например, координаты точки (x, y), дата или параметры конфигурации.
+
+  6. **Хешируемость**:
+    - **Кортеж** хешируем (если все его элементы также хешируемы), что позволяет использовать его в качестве ключа в словарях или элемента в множестве.
+    - **Список** не является хешируемым и не может быть ключом в словарях или элементом в множестве.
+
+  7. **Безопасность**:
+    - **Кортеж** благодаря своей неизменяемости является более безопасным для данных, которые не должны изменяться. Это предотвращает случайные или преднамеренные изменения данных.
+    - **Список**, наоборот, можно случайно изменить, что может привести к нежелательным последствиям.
+
+  8. **Синтаксические различия**:
+    - **Список** создаётся с помощью квадратных скобок:  
+      `my_list = [1, 2, 3]`
+    - **Кортеж** создаётся с помощью круглых скобок:  
+      `my_tuple = (1, 2, 3)`  
+      *Примечание*: если кортеж содержит один элемент, необходимо указать запятую:  
+      `single_element_tuple = (1,)`
+
+    Вывод:
+    
+    - Если вам нужна структура данных, которую можно изменять, используйте **список**.
+    - Если ваши данные неизменяемы, и вам важна оптимизация памяти и производительности, выбирайте **кортеж**.
 ---
 
 ### Что такое декоратор?
@@ -4316,8 +5120,34 @@ https://github.com/pixelb/ps_mem
     
     Sigterm statefulset может ждать какое-то время.
     
-    Statefulset для баз используется потому что там есть темплейт pvc
+    Statefulset для баз используется потому что там есть темплейт PVC.
     
+---
+
+### statefulset что такое ?
+
+- Ответ
+
+    *StatefulSet* - поддерживают состояние приложений за пределами жизненного цикла отдельных модулей pod, 
+    например для хранилища. Используется для приложений с отслеживанием состояния, 
+    каждый под будет иметь собственное состояние и будет иметь свой собственный PVC.
+
+    - Также statefulset не перебросится на другую ноду. Есть диск, который привязан. И при вымирании ноды, он не переедет в отличие от деплоймента.
+      Можно использовать NAS ( network attached storage ), nfs сервер или в целом облачную базу данных для того что бы не привязываться к ноде.
+
+    - Sigterm statefulset может ждать какое-то время. Потому что поды удаляются там строгом порядке, в обратном от создания. 
+      В стейтфулсет прилоежниях нужно сохранить состояние у каждого пода и заменеджерить каждый волюм маунт, что так же может
+      потребовать больше времени.
+
+    - Название подов у statefulset имеет структуру `<имя statefulset>-<номер пода c 0>`
+
+    - Statefulset так же исплользуется для баз данных потому что:
+        - для каждого пода есть темплейт PVC.
+        - при создании новой реплики происходит клонирования данных с самого первого пода.
+        - когда происходит write то сначала будет происходить запись на самый первый под,
+          а затем эти данные будут копироваться на все остальные.
+        - удаления подов в statefulset происходит в обратном порядке от создания.
+
 ---
 
 ### В чем отличие Deployment от Replicaset?
@@ -4383,6 +5213,12 @@ https://github.com/pixelb/ps_mem
 - Ответ
     
     Это контроллер приложения, который позволяет упаковать, развернуть и управлять приложением кубернетеса. Они расширяют функционал апи куба, и автоматически настраивают, создают экземпляры приложений
+
+    **другая формулировка**
+    
+    операторы это по сути под который следит за тем что бы некии ресурсы праивильно разворачивались, 
+    работали и удалялись, ничего не ломая и тд., так же за счет него можно расширят обычный кластер 
+    кубернетиса за счет кастомных ресурсов (CRD).
     
 ---
 
@@ -4404,11 +5240,14 @@ https://github.com/pixelb/ps_mem
 
 - Ответ
     
-    Мастер ноды и воркер ноды
+    - Мастер ноды и воркер ноды
     
-    В отказоустойчивом кластере должно быть 3 мастер ноды
+    - В отказоустойчивом кластере должно быть 3 мастер нод, для достижения кворума, когда большее кол-во 
+    мастер нод соглашается с решением для изменения данныхх в etcd.
+
+    - Использование нечетного количества мастер-нод помогает избежать ситуации split-brain в Kubernetes. Это явление возникает, когда связь между группами мастер-нод или между всеми нодами одновременно нарушается, и каждая изолированная группаМастерНод/мастер нода начинает считать себя полноценным кластером. Это приводит к проблемам с консистенцией данных в etcd, поскольку разные части кластера могут независимо принимать решения и изменять состояние кластера.
     
-    А воркер нод любое количество - зависит от нагрузки, которую хотим выполнять
+    - Воркер нод любое количество - зависит от нагрузки, которую хотим выполнять
     
     **kubectl -** внешний клиент, который обращается к мастер ноде
     
@@ -4447,9 +5286,18 @@ https://github.com/pixelb/ps_mem
     
     **kube proxy**
     
-    Компонент, управляющий сетевыми настройками узла
+    Компонент, управляющий сетевыми настройками узла. 
+    По дефолту куб прокси настраивает с помощью iptables правила маршрутизации 
+    на эндпоинты сервиса которые можно узнать с помощью `k describe svc/<svc-name>`.
+    Можно зайти на любой узел и сбросить все правила командой `iptables -F`.
+    Кубу по дефолту понадобиться 30 секунд что бы понять что праивл нет и восстановить их.
+    либо 10 секунд по дефолту что бы обновить правила маршрутизации при изменении
+    эндпоинтов или сервисов.
     
-    Container runtime (docker) - компонент, взаимодействующий с контейнером.
+    Был вопрос на собесе про куб прокси поподробнее.
+    [можно почитать про kube proxy](https://habr.com/ru/companies/flant/articles/359120/)
+    
+    **Container runtime** (docker) - компонент, взаимодействующий с контейнером.
     
     ![kube-proxy-img](https://github.com/Swfuse/devops-interview/blob/main/imgs/Untitled%2014.png)
     
@@ -4694,7 +5542,7 @@ https://github.com/pixelb/ps_mem
     - Без селектора
     - ClusterIP - по умолчанию. Сервису выделяется отдельный айпишник внутри кластера. Доступ можно сделать с помощью проксировани.
     - NodePort - выделяется айпи внутри кластера, и на каждом узле выделяется порт из диапазона 30000 - 32767.  То есть указываем на каком порте узлов это работает
-    - LoadBalancer - использует внешний айпи адрес. И он уже перенаправляет трафик на нод порт и кластер айпи, которые создаются автоматически. Минус в том, что внешний айпи адрес стоит денег.
+    - LoadBalancer - использует внешний айпи адрес. И он уже перенаправляет трафик на нод порт и кластер айпи, которые создаются автоматически. Минус в том, что внешний айпи адрес стоит денег. В облаке доступен из коробки а на bare metal нужно что то стороннее, допустим [MetalLB](https://metallb.universe.tf/)
     - ExternalName - перенаправление трафика. Через cname в днс кластере.
 
 ---
@@ -4706,6 +5554,10 @@ https://github.com/pixelb/ps_mem
     Это не тип сервиса, но это абстракция связана с предоставлением доступа к сервисам извне.
     
     Чем-то похоже на нжинкс. Который по локейшнам перенаправляет что-то куда-то.
+
+    есть такая особенность что ингресс перенаправляет трафик не на сервис, который
+    мы прописываем в backend.service.name а сразу на ендпоинты, что бы исключить
+    этот лишний хоп.
     
 ---
 
@@ -4959,7 +5811,7 @@ https://github.com/pixelb/ps_mem
     
     **NoSchedule**
     
-    Не размещать на узле без соответсвующих tolerations
+    Не размещать на узле без соответсвующих tolerations, поды которые уже работают на узле, не будут затронуты.
     
     **PreferNoSchedule**
     
@@ -4967,7 +5819,8 @@ https://github.com/pixelb/ps_mem
     
     **NoExecute**
     
-    Не размещать на узле поды без соответствующих tolerations. Все работающие на узле поды
+    Не размещать на узле поды без соответствующих tolerations. все поды которые уже есть на 
+    ноде с таким taint и не будут иметь соответствующие tolerations, будут мувнуты с нее на другю ноду.
     
 
 ### Что такое Requests, Limits?
@@ -4997,6 +5850,51 @@ https://github.com/pixelb/ps_mem
     В спецификации пода указываются требования и пожелания к узлам, а также к уже существующим подам.
     
     Как нод селектор. Но можно заказать условия. Типа метка может быть определенных типов, перечисленных.
+
+    **example**:
+
+    ```yaml
+    affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+          #параметр выше отвечает за то, что эти правила бдуут применяться при планировки а не при работе нод и тд
+            nodeSelectorTerms:
+            - matchExpressions: #disktype должен быть не hdd
+              - key: disktype
+                operator: NotIn
+                values:
+                - hdd
+            - matchExpressions: #RAM памяти должено быть больше чем 8гб на ноде 
+              - key: memory
+                operator: Gt
+                values:
+                - 8Gi
+            - matchExpressions: #gpu должн обыть на ноде
+              - key: gpu
+                operator: Exists
+      podAntiAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+      - weight: 100 #позволяет задать вес правилу и там самым можно управлять их приоритетностью
+        podAntiAffinityTerm:
+          labelSelector:
+            matchExpressions: #в целом это правило указываеьт что бы поды с меткой app = web-app были на разных хостах
+            - key: app
+              operator: In
+              values:
+              - web-app
+          #topologyKey позволяет указать на каком уровне будут применяться правила, здесь на уровне  хоста
+          topologyKey: kubernetes.io/hostname 
+      podAffinity:
+        requiredDuringSchedulingIgnoredDuringExecution:
+        - podAffinityTerm:
+            labelSelector: 
+              matchExpressions: #лейбл security должен быть = s1 на поде
+              - key: security
+                operator: In
+                values:
+                - s1
+            topologyKey: kubernetes.io/hostname
+    ```
     
 ---
     
@@ -5008,8 +5906,32 @@ https://github.com/pixelb/ps_mem
     Пакетный менеджер для кубера.
     Шаблонизатор для управления
     
-    Пакет в helm это набор yml, архив с yml
+    Пакет в helm это набор yml и tpl файлов.
+
+    *.tpl файлы нужны для определения каких то функций
+    который будут возвращать какие то параметры либо имена и тд
+    в файле *.tpl ты с помощью ключевого слова define определяешь функцию
+    а в самом хелм чарте с помощью include, вставляешь ее результат.
+    Обычно используется для генерации labels, полных имен и тд.
    
+---
+
+### Что дает helm в кубе ?
+
+- Ответ
+
+    1. Версионирования.
+    2. Шаблонизирование.
+    3. Удобство развертывания инфраструктуры на разные контура.
+    4. Более подконтрольная работа с конкретной разворачиваемой инфраструктурой.
+    5. Возможность подтягивать зависимости. Допустим  если у тебя хелм чарт 
+       зависит от другого хелм чарта, ты можешьб либо в самом Chart.yml 
+       файле в директиве dependency прописать зависимотси, либо 
+       в отдельном файле requirements.yml прописать все зависимости
+       и перед раскаткой основного хелм чарта поднятнуть все зависимости командой 
+       `helm dependency update`.
+
+
 ---
 
 ### если лимит больше чем реквест и нету ресурсов на ноде и выложиться ли такой под
@@ -5047,6 +5969,49 @@ https://github.com/pixelb/ps_mem
     И когда хелсчеки прошли по новым.
     
 
+---
+
+### Что такое headless service ? 
+
+- Ответ
+
+    Это такой сервис, который привязывается к какому-то ворклоаду и не имеет как такового IP адреса, а имеет DNS запись. 
+    При ответе он подставляет не свой IP адрес, а все IP адреса, которые лейблом к этому хедлесс сервису.
+    
+    Как я понял, это полезно, когда тебе нужно у какой-то группы подов раскрыть их имена и обращаться к ним 
+    напрямую без балансировки нагрузки, что может помочь не взаимодействовать с мертвыми подами.
+
+    в ямле это сервисе где указывается `clusterIP: None` и может выглядить как:
+    
+    ```yaml 
+    apiVersion: v1
+    kind: Service
+    metadata:
+      name: my-headless-service
+    spec:
+      selector:
+        app: web-app
+      clusterIP: None
+      ports:
+        port: 80
+        targetPort: 8080
+    ```
+
+    допустим как может выглядеть пример взаимодействия через headless servic  и черещз обычнй сервис
+
+    ```bash
+    kubectl get pods -l app=web-app -o jsonpath='{.items[*].metadata.name}' #получаем список подов
+
+    curl http://<pod-name>.my-headless-service.default.svc.cluster.local #делам запрос на конкретный под
+
+    curl http://my-headless-service.default.svc.cluster.local:80 #может сделать запрос просто на сервис
+    ```
+
+    через обычный сервис
+    
+    ```bash
+    curl http://common-service
+    ```
 ---
 
 ## GIT
@@ -5545,7 +6510,3 @@ https://github.com/pixelb/ps_mem
     Статьи, которые помогли в понимании сути:
     https://etogeek.dev/posts/sli-slo-sla/  
     https://uptimerobot.com/blog/sla-slo-sli/   
-
-
-
-    
