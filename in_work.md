@@ -124,28 +124,28 @@ Helm-чарт — это набор манифестов Kubernetes, шабло�
 📦 README.md — описание чарта и примеры использования (если повезёт).  
 Пример структуры чарта:  
 
-> my-chart/
-├── Chart.yaml
-├── values.yaml
-└── templates/
-    ├── deployment.yaml
-    ├── service.yaml
-    └── _helpers.tpl
+> my-chart/  
+├── Chart.yaml  
+├── values.yaml  
+└── templates/  
+    ├── deployment.yaml  
+    ├── service.yaml  
+    └── _helpers.tpl  
 
 ## ⚙️ 2. Добавление сервисов по образу и подобию  
 
 Пример **service.yaml**:  
 
-> apiVersion: v1
-kind: Service
-metadata:
-  name: {{ include "my-chart.fullname" . }}
-spec:
-  ports:
-    - port: {{ .Values.service.port }}
-      targetPort: {{ .Values.service.targetPort }}
-  selector:
-    app: {{ .Values.appName }}
+> apiVersion: v1  
+kind: Service  
+metadata:  
+  name: {{ include "my-chart.fullname" . }}  
+spec:  
+  ports:  
+    - port: {{ .Values.service.port }}  
+      targetPort: {{ .Values.service.targetPort }}  
+  selector:  
+    app: {{ .Values.appName }}  
 
 В **values.yaml** добавляем:  
 
