@@ -2,7 +2,9 @@
 
 - Ответ:
 Проверить статус пода:
+
 kubectl get pods -n <namespace>
+
 Возможные статусы: CrashLoopBackOff, ImagePullBackOff, Pending, Error, Completed и т. д.
 
 Получить подробную информацию о поде:
